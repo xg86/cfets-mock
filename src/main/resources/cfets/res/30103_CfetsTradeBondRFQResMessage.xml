@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>4000</action>
+    <clientID>xIR2</clientID>
+    <serialNo>567</serialNo>
+    <version>1.0.006</version>
+    <msgType>P</msgType>
+    <sendingTime>20171229-11:51:55.429</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+    <errorMsg></errorMsg>
+  </header>
+  <body>
+    <clOrdIDClientID>887</clOrdIDClientID>
+    <origClOrdID></origClOrdID>
+    <quoteID>201712290410000059</quoteID>
+    <quoteTransType></quoteTransType>
+    <transactTime>20171229-11:52:01.548</transactTime>
+    <marketIndicator>4</marketIndicator>
+    <securityType>CBT</securityType>
+    <quoteType>112</quoteType>
+    <validUntilTime></validUntilTime>
+    <securityID>1080023</securityID>
+    <side></side>
+    <orderQty></orderQty>
+    <deliveryType></deliveryType>
+    <clearingMethod></clearingMethod>
+    <settlType></settlType>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsdealer</traderID>
+    <custodianAcctNumber></custodianAcctNumber>
+    <cashAcctNumber></cashAcctNumber>
+    <counterPartyList/>
+    <serialNo></serialNo>
+    <qid>1210</qid>
+    <clOrdID></clOrdID>
+    <status>9</status>
+    <errorCode>0</errorCode>
+    <errorMsg></errorMsg>
+  </body>
+</root>

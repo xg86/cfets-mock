@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+	<context:annotation-config />
+	<context:component-scan
+		base-package="com.xquant.platform.component.mock.dao,
+		    com.xquant.platform.component.mock.service,
+		    com.xquant.platform.component.mock.persist,
+		    com.xquant.platform.component.mock.resolver" />
+
+	<context:property-placeholder location="classpath:sysconfig.properties" />
+	
+	<bean class="org.springframework.jdbc.core.JdbcTemplate">
+	    <property name="dataSource" ref="dataSource"/>
+	</bean>
+
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+
+		<property name="name" value="${jdbc.username}" />
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+
+		<property name="initialSize" value="${ds.initialSize}" />
+		<property name="minIdle" value="${ds.minIdle}" />
+		<property name="maxActive" value="${ds.maxActive}" />
+
+		<property name="maxWait" value="${ds.maxWait}" />
+		<property name="timeBetweenEvictionRunsMillis" value="${ds.timeBetweenEvictionRunsMillis}" />
+		<property name="validationQuery" value="${ds.validationQuery}" />
+
+	</bean>
+
+	<!-- 定义Spring与MyBatis整合的控制操作，此时数据库的连接对象取得由Spring负责 -->
+	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 配置所有资源文件的保存路径 -->
+		<property name="mapperLocations" value="classpath:sqlMapper/**/*.xml" />
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="${basePackage}" />
+		<property name="sqlSessionFactoryBeanName" value="sessionFactory" />
+		<property name="processPropertyPlaceHolders" value="true" />
+	</bean>
+
+</beans>

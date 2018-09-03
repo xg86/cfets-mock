@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.BondRfqResQuoteResMessageDao">
+	<resultMap id="BaseResultMap" type="com.xquant.platform.component.mock.dto.ArchiveApproveQuoteRelation">
+		<result column="RELATION_STATUS" property="relationStatus" jdbcType="INT" />
+		<result column="ARCHIVE_TIME" property="archiveTime" jdbcType="VARCHAR" />
+		<result column="CL_ORD_ID" property="clOrdId" jdbcType="VARCHAR" />
+		<result column="ORD_ID" property="ordId" jdbcType="BIGINT" />
+		<result column="UPDATE_TIME" property="updateTime" jdbcType="VARCHAR" />
+		<result column="QUOTE_BIZ_TYPE" property="quoteBizType" jdbcType="VARCHAR" />
+		<result column="TRANSACT_TIME" property="transactTime" jdbcType="VARCHAR" />
+		<result column="CLORDID_CLIENT_ID" property="clordidClientId" jdbcType="VARCHAR" />
+		<result column="VERSION" property="version" jdbcType="INT" />
+		<result column="ID" property="id" jdbcType="BIGINT" />
+		<result column="OCCUPY_AMOUNT" property="occupyAmount" jdbcType="DECIMAL" />
+		<result column="CREATE_TIME" property="createTime" jdbcType="VARCHAR" />
+		<result column="INVALID_DESC" property="invalidDesc" jdbcType="VARCHAR" />
+		<result column="QUOTE_ID" property="quoteID" jdbcType="VARCHAR" />
+		<result column="IS_MAIN_ORDER" property="isMainOrder" jdbcType="VARCHAR" />
+	</resultMap>
+	<sql id="BaseColumn">
+		RELATION_STATUS,
+		ARCHIVE_TIME,
+		CL_ORD_ID,
+		ORD_ID,
+		UPDATE_TIME,
+		QUOTE_BIZ_TYPE,
+		TRANSACT_TIME,
+		CLORDID_CLIENT_ID,
+		VERSION,
+		ID,
+		OCCUPY_AMOUNT,
+		CREATE_TIME,
+		INVALID_DESC,
+		QUOTE_ID,
+		IS_MAIN_ORDER
+	</sql>
+	<sql id="baseValue">
+		#{relationStatus,jdbcType=INT},
+		#{archiveTime,jdbcType=VARCHAR},
+		#{clOrdId,jdbcType=VARCHAR},
+		#{ordId,jdbcType=BIGINT},
+		#{updateTime,jdbcType=VARCHAR},
+		#{quoteBizType,jdbcType=VARCHAR},
+		#{transactTime,jdbcType=VARCHAR},
+		#{clordidClientId,jdbcType=VARCHAR},
+		#{version,jdbcType=INT},
+		#{id,jdbcType=BIGINT},
+		#{occupyAmount,jdbcType=DECIMAL},
+		#{createTime,jdbcType=VARCHAR},
+		#{invalidDesc,jdbcType=VARCHAR},
+		#{quoteID,jdbcType=VARCHAR},
+		#{isMainOrder,jdbcType=VARCHAR}
+	</sql>
+	<insert id="insert" parameterType="com.xquant.platform.component.mock.dto.ArchiveApproveQuoteRelation">
+		INSERT INTO ARCHIVE_TTRD_XCC_QUOTE_RELATION 
+		(
+		<include refid="BaseColumn" />
+		)
+		VALUES
+		(
+		<include refid="baseValue" />
+		)
+	</insert>
+</mapper>

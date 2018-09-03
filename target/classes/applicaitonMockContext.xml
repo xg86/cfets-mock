@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.xquant.platform.component.mock" />
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<context:property-placeholder location="classpath:sysconfig.properties" />
+
+	<!-- <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"> -->
+	<!-- <property name="basenames"> -->
+	<!-- <array> -->
+	<!-- <value>sysconfig</value> -->
+	<!-- </array> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!--必须存在 -->
+	<bean class="com.xQuant.base2.support.config.ConfigSupport" factory-method="getInstance">
+		<property name="locations">
+			<array>
+				<!--路径、文件名称都由项目点自行决定，但必须存在以便后面配置系统参数使用 -->
+				<value>classpath:sysconfig.properties</value>
+			</array>
+		</property>
+	</bean>
+
+	<!-- 配置报价推送服务端 -->
+	<bean id="cfetsLongLiveNettySever" class="com.xquant.platform.component.mock.netty.MyCfetsLongLiveNettyServer">
+		<property name="port" value="${tc.itf.cfets.mock.push.port}" />
+		<property name="isQuote" value="true" />
+	</bean>
+
+	<!-- 配置行情推送服务端 -->
+	<bean id="cfetsMarktDataNettySever" class="com.xquant.platform.component.mock.netty.MyCfetsLongLiveNettyServer">
+		<property name="port" value="${tc.itf.cfets.mock.push.market.port}" />
+		<property name="isQuote" value="false" />
+	</bean>
+
+	<!-- 配置报价接收服务端 -->
+	<bean id="cfetsShortLiveNettySever" class="com.xquant.platform.component.mock.netty.MyCfetsShortLiveNettyServer">
+		<constructor-arg name="port" value="${tc.itf.cfets.mock.req.port}" />
+	</bean>
+	
+		<!-- 配置报价推送服务端 -->
+	<bean id="xswapLongLiveNettySever" class="com.xquant.platform.component.mock.netty.MyXswapLongLiveNettyServer">
+		<property name="port" value="${tc.itf.xswap.mock.push.port}" />
+		<property name="isQuote" value="true" />
+	</bean>
+
+	<!-- 配置行情推送服务端 -->
+	<bean id="xswapMarktDataNettySever" class="com.xquant.platform.component.mock.netty.MyXswapLongLiveNettyServer">
+		<property name="port" value="${tc.itf.xswap.mock.push.market.port}" />
+		<property name="isQuote" value="false" />
+	</bean>
+
+	<!-- 配置报价接收服务端 -->
+	<bean id="xswapShortLiveNettySever" class="com.xquant.platform.component.mock.netty.MyXswapShortLiveNettyServer">
+		<constructor-arg name="port" value="${tc.itf.xswap.mock.req.port}" />
+	</bean>
+
+	<!-- <bean id="xswapShortLiveNettySever" -->
+	<!-- class="com.xquant.platform.component.mock.netty.MyXswapShortLiveNettyServer"> -->
+	<!-- <constructor-arg name="port" -->
+	<!-- value="${tc.itf.xswap.mock.port}" /> -->
+	<!-- </bean> -->
+
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="name" value="trd_cams" />
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialSize" value="${ds.initialSize}" />
+		<property name="minIdle" value="${ds.minIdle}" />
+		<property name="maxActive" value="${ds.maxActive}" />
+		<property name="maxWait" value="${ds.maxWait}" />
+		<property name="timeBetweenEvictionRunsMillis" value="${ds.timeBetweenEvictionRunsMillis}" />
+		<property name="validationQuery" value="${ds.validationQuery}" />
+	</bean>
+
+	<!-- 定义Spring与MyBatis整合的控制操作，此时数据库的连接对象取得由Spring负责 -->
+	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 配置所有资源文件的保存路径 -->
+		<property name="mapperLocations" value="classpath*:sqlMapper/**/*.xml" />
+		<property name="configurationProperties">
+			<props>
+				<prop key="dialect">${ds.dialect}</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"> -->
+	<!-- <property name="basePackage" -->
+	<!-- value="com.xquant.platform.component.mock.dao,com.xquant.platform.component.dao,com.xquant.platform.component.*.dao,com.xquant.platform.component.common.*.dao,com.xquant.platform.component.risk.*.dao, 
+		com.xquant.platform.component.itf.zzdirect.dao,com.xquant.platform.component.datainit.*.dao,com.xquant.platform.component.account.skeleton.dao,com.xquant.platform.component.workbench.portal.dao,com.xquant.platform.component.javascript.*.dao,com.xquant.platform.component.javascript.bkp.cfg.dao,com.xquant.platform.component.javascript.homepage.remind.dao,com.xquant.platform.component.mktref.mapper"></property> -->
+	<!-- <property name="sqlSessionFactoryBeanName" value="sessionFactory" /> -->
+	<!-- <property name="processPropertyPlaceHolders" value="true" /> -->
+	<!-- </bean> -->
+
+	<bean class="com.xquant.platform.component.spring.MybatisMapperScanner" />
+
+	<!-- 定义数据库的事务控制 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean class="com.xquant.platform.component.compute.service.impl.ComputeServiceImpl" />
+	<bean class="com.xquant.platform.component.service.pp.impl.ComputeEngineImpl" />
+	<bean class="com.xquant.platform.component.trade.service.impl.SetTypeServiceImpl" />
+	<bean class="com.xquant.platform.component.service.impl.StrategyFactoryDefaultImpl"></bean>
+	<bean class="com.xquant.platform.component.service.facade.remote.impl.RemoteServiceFactoryDefaultImpl"></bean>
+	<bean class="com.xquant.platform.component.lfp.facade.impl.FacadeLfpServiceImpl"></bean>
+	<bean class="com.xquant.platform.component.lfp.service.impl.LfpSerivceWrapperImpl"></bean>
+	<bean class="com.xquant.platform.component.lfp.service.impl.LfpVoteServiceImpl"></bean>
+	<bean class="com.xquant.platform.component.lfp.service.impl.LfpService4EtlImpl"></bean>
+	<bean class="com.xquant.platform.component.lfp.service.impl.LfpService4TpImpl"></bean>
+	<bean class="com.xquant.platform.component.lfp.service.impl.LfpSignInServiceImpl"></bean>
+
+
+	<!-- <bean class="com.xquant.platform.component.spring.MybatisMapperScanner" /> <import resource="classpath*:/appContext-base.xml"/> 
+		<import resource="classpath*:/appContext-component.xml"/> <import resource="classpath*:/appContext-component-cfets.xml"/> 
+		<import resource="classpath*:/appContext-component-xswap.xml"/> <import resource="classpath*:/appContext-component-common-facade.xml"/> -->
+
+	<!-- 以下配置一个与真实服务器连接的长连接连接工厂 -->
+
+	<bean id="reqSerialNoGenerator"
+		class="com.xquant.platform.component.mock.generator.MockReqSerialNoGenerator" />
+	<bean id="eventLoopGroup"
+		class="com.xquant.platform.component.itf.cfets.transport.netty.spring.EventLoopGroupFactoryBean" />
+	<bean id="cfetsHumanReadableTranslator"
+		class="com.xquant.platform.component.itf.cfets.skeleton.transport.CfetsHumanReadableTranslator" />
+	<bean id="cfetsRegisterMessageBuilder"
+		class="com.xquant.platform.component.itf.cfets.skeleton.transport.CfetsRegisterMessageBuilder" />
+	<bean id="cfetsHeartBeatMessageBuilder"
+		class="com.xquant.platform.component.itf.cfets.skeleton.transport.CfetsHeartBeatMessageBuilder" />
+	<bean id="connectFailureHandler"
+		class="com.xquant.platform.component.itf.cfets.transport.netty.spring.ConnectFailureHandlerFactoryBean">
+		<property name="handlerClassName"
+			value="${tc.itf.cfets.retryhandler.handlerclass:com.xquant.platform.component.itf.cfets.transport.netty.retry.PeriodRetryConnectFailureHandler}" />
+		<property name="handlerConfig" value="${tc.itf.cfets.retryhandler.handlerconfig:}" />
+	</bean>
+
+	<bean id="cfetsNettyLongLiveClientFactory"
+		class="com.xquant.platform.component.itf.cfets.transport.netty.NettyLongLiveClientFactory">
+		<qualifier value="cfetsNettyLongLiveClientFactory" />
+		<property name="eventLoopGroup" ref="eventLoopGroup" />
+		<property name="serializer">
+			<bean class="com.xquant.platform.component.itf.cfets.skeleton.transport.CfetsSerializer">
+			</bean>
+		</property>
+		<property name="deSerializer">
+			<bean class="com.xquant.platform.component.itf.cfets.skeleton.transport.CfetsDeSerializer">
+				<constructor-arg>
+					<value>P</value>
+				</constructor-arg>
+			</bean>
+		</property>
+		<property name="connectFailureHandler" ref="connectFailureHandler" />
+		<property name="registerMessageBuilder" ref="cfetsRegisterMessageBuilder" />
+		<property name="heartBeatMessageBuilder" ref="cfetsHeartBeatMessageBuilder" />
+		<property name="humanReadableTranslator" ref="cfetsHumanReadableTranslator" />
+		<property name="failRetrySwitch">
+			<value>${tc.itf.cfets.failRetrySwitch:true}</value>
+		</property>
+	</bean>
+
+</beans>
+

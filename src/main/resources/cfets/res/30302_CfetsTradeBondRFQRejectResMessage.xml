@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>4002</action>
+    <clientID>xIR2</clientID>
+    <serialNo>720</serialNo>
+    <version>1.0.006</version>
+    <msgType>P</msgType>
+    <sendingTime>20180104-15:12:01.921</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+    <errorMsg></errorMsg>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201712290410000098</clOrdIDClientID>
+    <marketIndicator>4</marketIndicator>
+    <securityType>CBT</securityType>
+    <quoteType>112</quoteType>
+    <quoteRequestRejectType>1</quoteRequestRejectType>
+    <quoteID>201712290410000098</quoteID>
+    <transactTime>20180104-15:10:01.108</transactTime>
+    <securityID>1080023</securityID>
+    <side>1</side>
+    <partyID>891012844010011610011</partyID>
+    <traderID>htcsdealer</traderID>
+    <counterPartyID>346234623462346234621</counterPartyID>
+    <counterTraderID>htcsdealer</counterTraderID>
+    <serialNo>201801040000001557</serialNo>
+    <qid>1493</qid>
+    <clOrdID>ODhzhttrd000001492</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+    <errorMsg></errorMsg>
+  </body>
+</root>

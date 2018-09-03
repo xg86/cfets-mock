@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.DatabaseQueryDao">
+
+	<resultMap type="com.xquant.platform.component.mock.dto.DataColumn" id="BaseResultMap">
+		<result column="COLUMN_NAME" property="columnName" />
+		<result column="DATA_TYPE" property="columnType" />
+	</resultMap>
+
+	<select id="getNextXswapTradePid" resultType="Long">
+		select XCC_NEXTVAL2('S_AUTOINC_XSWAP_PID','1')
+	</select>
+
+	<select id="getNextXswapTradeQid" resultType="Long">
+		select XCC_NEXTVAL2('S_AUTOINC_XSWAP_SYSREQID','1')
+	</select>
+
+	<select id="getNextCfetsTradePid" resultType="Long">
+		select XCC_NEXTVAL2('S_AUTOINC_CFETS_TRADE_PID','1')
+	</select>
+
+	<select id="getNextCfetsTradeQid" resultType="Long">
+		select XCC_NEXTVAL2('S_AUTOINC_CFETS_TRADE_QID','1')
+	</select>
+
+	<select id="getColumnNameAndTypeOfTable" parameterType="String" resultMap="BaseResultMap">
+		SELECT COLUMN_NAME,DATA_TYPE FROM
+		information_schema.COLUMNS WHERE TABLE_NAME = #{tableName}
+	</select>
+
+	<select id="getColumnNameOfTable" parameterType="String" resultType="String">
+		SELECT COLUMN_NAME FROM information_schema.COLUMNS
+		WHERE TABLE_NAME = #{tableName}
+	</select>
+
+</mapper>

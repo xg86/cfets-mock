@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.XSwapMDQuoteResMessageDao">
+
+	<sql id="BaseColumn">
+		SECURITYID,
+		SECURITYTYPE,
+		PARTY,
+		MARKETINDICATOR,
+		TRANSACTTIME,
+		CLEARINGMETHOD,
+		MDBOOKTYPE,
+		CLIENTREQID,
+		MARKETDEPTH,
+		STATUS,
+		SERIALNO,
+		TRADER,
+		SUBSCRIPTIONREQUESTTYPE,
+		SYSREQID,
+		CLIENTID,
+		UPDATETIME
+	</sql>
+
+	<sql id="baseValue">
+		#{securityID,jdbcType=VARCHAR},
+		#{securityType,jdbcType=VARCHAR},
+		#{party,jdbcType=VARCHAR},
+		#{marketIndicator,jdbcType=VARCHAR},
+		#{transactTime,jdbcType=VARCHAR},
+		#{clearingMethod,jdbcType=DECIMAL},
+		#{mdBookType,jdbcType=DECIMAL},
+		#{clientReqID,jdbcType=VARCHAR},
+		#{marketDepth,jdbcType=DECIMAL},
+		#{status,jdbcType=DECIMAL},
+		#{serialNo,jdbcType=VARCHAR},
+		#{trader,jdbcType=VARCHAR},
+		#{subscriptionRequestType,jdbcType=VARCHAR},
+		#{sysReqID,jdbcType=VARCHAR},
+		#{clientId,jdbcType=VARCHAR},
+		#{updateTime,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert" parameterType="xquant.xswap.protocol.XSwapMDQuoteResBody">
+
+		INSERT INTO TTRD_XSWAP_MD_QUOTE_REQ
+		(
+		<include refid="BaseColumn" />
+		)
+		VALUES
+		(
+		<include refid="baseValue" />
+		)
+
+	</insert>
+
+</mapper>

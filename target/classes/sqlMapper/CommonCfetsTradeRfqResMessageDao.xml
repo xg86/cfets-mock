@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.CommonCfetsTradeRfqResMessageDao">
+
+	<update id="updateStatus">
+		update TTRD_CFETS_TRADE_RFQ_RES
+		<set>
+			<if test="status !=null">
+				STATUS = #{status},
+			</if>
+			<if test="transactTime !=null">
+				TRANSACTTIME = #{transactTime},
+			</if>
+			<if test="quotetranstype !=null">
+				QUOTETRANSTYPE = #{quotetranstype},
+			</if>
+			<if test="sendOrRecvFlag !=null">
+				SEND_RECV_FLAG = #{sendOrRecvFlag},
+			</if>
+		</set>
+		WHERE QUOTEID = #{quoteId}
+	</update>
+
+	<delete id="delete">
+		delete from TTRD_CFETS_TRADE_RFQ_RES WHERE QUOTEID =
+		#{quoteId}
+	</delete>
+	
+	<select id="queryValidQuoteIdViaQuoteReqId" parameterType="String" resultType="String">
+	    SELECT QUOTEID FROM ttrd_cfets_trade_rfq_res WHERE QUOTEREQID = #{quoteReqId} AND STATUS = 5
+	</select>
+
+</mapper>

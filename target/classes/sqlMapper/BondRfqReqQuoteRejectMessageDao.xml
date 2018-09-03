@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.BondRfqReqQuoteRejectMessageDao">
+	<resultMap id="BaseResultMap"
+		type="com.xquant.cfets.trade.protocol.message.CfetsTradeBondRFQRejectResMessageBody">
+		<result column="SECURITYID" property="securityID" jdbcType="VARCHAR" />
+		<result column="SECURITYTYPE" property="securityType" jdbcType="VARCHAR" />
+		<result column="CLORDID" property="clOrdID" jdbcType="VARCHAR" />
+		<result column="TRADERID" property="traderID" jdbcType="VARCHAR" />
+		<result column="MARKETINDICATOR" property="marketIndicator" jdbcType="VARCHAR" />
+		<result column="ERRORMSG" property="errorMsg" jdbcType="VARCHAR" />
+		<result column="TRADERNAME" property="traderName" jdbcType="VARCHAR" />
+		<result column="PARTYID" property="partyID" jdbcType="VARCHAR" />
+		<result column="TRANSACTTIME" property="transactTime" jdbcType="VARCHAR" />
+		<result column="CASH_ACCT_NUMBER" property="cashAcctNumber" jdbcType="VARCHAR" />
+		<result column="QID" property="qid" jdbcType="DECIMAL" />
+		<result column="SIDE" property="side" jdbcType="VARCHAR" />
+		<result column="QUOTEID" property="quoteID" jdbcType="VARCHAR" />
+		<result column="CUSTODIAN_ACCT_NUMBER" property="custodianAcctNumber" jdbcType="VARCHAR" />
+		<result column="STATUS" property="status" jdbcType="DECIMAL" />
+		<result column="QUOTETYPE" property="quoteType" jdbcType="DECIMAL" />
+		<result column="ERRORCODE" property="errorCode" jdbcType="VARCHAR" />
+		<result column="CLORDID_CLIENT_ID" property="clOrdIDClientID" jdbcType="VARCHAR" />
+		<result column="PORTFOLIO" property="portfolio" jdbcType="VARCHAR" />
+		<result column="PARTYNAME" property="partyName" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="BaseColumn">
+		SECURITYID,
+		SECURITYTYPE,
+		CLORDID,
+		TRADERID,
+		MARKETINDICATOR,
+		ERRORMSG,
+		TRADERNAME,
+		PARTYID,
+		TRANSACTTIME,
+		CASH_ACCT_NUMBER,
+		QID,
+		SIDE,
+		QUOTEID,
+		CUSTODIAN_ACCT_NUMBER,
+		STATUS,
+		QUOTETYPE,
+		ERRORCODE,
+		CLORDID_CLIENT_ID,
+		PORTFOLIO,
+		PARTYNAME
+	</sql>
+
+	<sql id="baseValue">
+		#{securityID,jdbcType=VARCHAR},
+		#{securityType,jdbcType=VARCHAR},
+		#{clOrdID,jdbcType=VARCHAR},
+		#{traderID,jdbcType=VARCHAR},
+		#{marketIndicator,jdbcType=VARCHAR},
+		#{errorMsg,jdbcType=VARCHAR},
+		#{traderName,jdbcType=VARCHAR},
+		#{partyID,jdbcType=VARCHAR},
+		#{transactTime,jdbcType=VARCHAR},
+		#{cashAcctNumber,jdbcType=VARCHAR},
+		#{qid,jdbcType=DECIMAL},
+		#{side,jdbcType=VARCHAR},
+		#{quoteID,jdbcType=VARCHAR},
+		#{custodianAcctNumber,jdbcType=VARCHAR},
+		#{status,jdbcType=DECIMAL},
+		#{quoteType,jdbcType=DECIMAL},
+		#{errorCode,jdbcType=VARCHAR},
+		#{clOrdIDClientID,jdbcType=VARCHAR},
+		#{portfolio,jdbcType=VARCHAR},
+		#{partyName,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert"
+		parameterType="com.xquant.cfets.trade.protocol.message.CfetsTradeBondRFQRejectResMessageBody">
+		INSERT INTO TTRD_CFETS_TRADE_RFQ
+		(
+		<include refid="BaseColumn" />
+		,UPDATETIME)
+		VALUES
+		(
+		<include refid="baseValue" />
+		,NOW())
+	</insert>
+
+	<update id="updateMessage">
+		update TTRD_CFETS_TRADE_RFQ
+		<set>
+			<if test="action != null">ACTION = #{action},</if>
+			<if test="sendOrRecv != null">SEND_RECV_FLAG = #{sendOrRecv},</if>
+			<if test="myside != null">MYSIDE = #{myside},</if>
+			<if test="clientId != null">CLIENT_ID = #{clientId}</if>
+		</set>
+		WHERE QUOTEID = #{quoteId}
+	</update>
+
+	<update id="updateStatus">
+		update TTRD_CFETS_TRADE_RFQ set STATUS =
+		#{status},TRANSACTTIME =
+		#{transactTime} WHERE QUOTEID =
+		#{quoteId}
+	</update>
+
+	<delete id="delete">
+		delete from TTRD_CFETS_TRADE_RFQ WHERE QUOTEID =
+		#{quoteId}
+	</delete>
+
+	<select id="queryByQuoteId" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_CFETS_TRADE_RFQ
+		WHERE QUOTEID = #{quoteId}
+	</select>
+
+
+</mapper>

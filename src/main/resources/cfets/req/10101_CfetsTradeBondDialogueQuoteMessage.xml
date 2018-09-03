@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>2000</action>
+    <clientID>xIR2</clientID>
+    <serialNo>201712280000001201</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20171228-10:54:48.048</sendingTime>
+    <from>192.168.7.127</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>634</clOrdIDClientID>
+    <quoteTransType>N</quoteTransType>
+    <orderQty>10000000.0000</orderQty>
+    <securityID>1080023</securityID>
+    <side>1</side>
+    <validUntilTime>20171228-19:30:00.000</validUntilTime>
+    <settlType>2</settlType>
+    <quoteType>1</quoteType>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <deliveryType>0</deliveryType>
+    <clearingMethod>13</clearingMethod>
+    <price>99.0000</price>
+    <maturityYield>335.0000</maturityYield>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsdealer</traderID>
+    <cashAcctNumber>98769876987607</cashAcctNumber>
+    <custodianAcctNumber>0980980987</custodianAcctNumber>
+    <counterPartyID>891012844010011610011</counterPartyID>
+    <counterTraderName>a079</counterTraderName>
+    <counterTraderID>htdealergsab</counterTraderID>
+    <settlCurrency>CNY</settlCurrency>
+    <settlCurrFxRate>1.126545</settlCurrFxRate>
+  </body>
+</root>

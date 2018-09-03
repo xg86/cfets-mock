@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.CfetsTradePushMessageDao">
+
+	<sql id="BaseColumn">
+		ACTION,
+		CLIENT_ID,
+		PID,
+		MSG,
+		UPDATE_TIME
+	</sql>
+
+	<sql id="baseValue">
+		#{action,jdbcType=VARCHAR},
+		#{clientId,jdbcType=VARCHAR},
+		#{pid,jdbcType=VARCHAR},
+		#{message,jdbcType=VARCHAR},
+		#{updatetime,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert" parameterType="com.xquant.platform.component.mock.dto.CfetsTradePushMessage">
+
+		INSERT INTO TTRD_CFETS_TRADE_PUSH_MSG
+		(
+		<include refid="BaseColumn" />
+		)
+		VALUES
+		(
+		<include refid="baseValue" />
+		)
+
+	</insert>
+
+</mapper>

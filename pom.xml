@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xquant.cfets.mock</groupId>
+	<artifactId>com-xquant-cfets-mock</artifactId>
+	<version>1.0.0</version>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Maven supports the concept of a "bill of materials" (BOM) dependency. You can import the spring-framework-bom in your dependencyManagement 
+				section to ensure that all spring dependencies (both direct and transitive) are at the same version.An added benefit of using the BOM 
+				is that you no longer need to specify the <version> attribute when depending on Spring Framework artifacts: -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>4.3.5.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.xquant.platform.pptp.stub</groupId>
+			<artifactId>xquant-platform-pptp-stub</artifactId>
+			<version>1.137.1.1.STUB</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xquant.platform.component</groupId>
+			<artifactId>xquant-platform-component-common</artifactId>
+			<version>1.2.7.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xquant.platform.component</groupId>
+			<artifactId>xquant-platform-component</artifactId>
+			<version>1.2.7.7</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.xquant.platform.component.web</groupId> <artifactId>xquant-platform-component-web-cfets</artifactId> 
+			<version>1.0.5-SNAPSHOT</version> </dependency> -->
+
+
+
+		<dependency>
+			<groupId>com.xquant.cfets.xtrade</groupId>
+			<artifactId>X-Swap-Protocol</artifactId>
+			<version>1.0.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.xquant.cfets.trade</groupId>
+			<artifactId>CFETS-TRADE-Protocol</artifactId>
+			<version>1.0.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xquant.platform.component.cfets</groupId>
+			<artifactId>xquant-platform-component-cfets</artifactId>
+			<version>1.1.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xquant.platform.component.cfets</groupId>
+			<artifactId>xquant-platform-component-cfets-transport</artifactId>
+			<version>1.1.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xquant.platform.component.cfets</groupId>
+			<artifactId>xquant-platform-component-cfets-common</artifactId>
+			<!-- <version>1.1.6.1</version> -->
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.xquant.platform.component.cfets</groupId>
+			<artifactId>xquant-platform-component-cfets-xswap</artifactId>
+			<version>1.1.6.1</version>
+		</dependency>
+
+		<!--mysql driver 由项目点自行决定 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.42</version>
+		</dependency>
+
+		<!-- oracle驱动 -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.db2</groupId>
+			<artifactId>db2jcc_license_cu</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm.db2</groupId>
+			<artifactId>db2jcc</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+
+		<!-- Spring -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-messaging</artifactId>
+		</dependency>
+
+
+		<!-- 测试用 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--log4j 日志用 -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>com-xquant-cfets-mock</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<warName>cfetsclienta</warName>
+					<!--指定web.xml的路径 -->
+					<webXml>WebContent\WEB-INF\web.xml</webXml>
+					<!--指定jsp、js、css的路径 -->
+					<warSourceDirectory>WebContent</warSourceDirectory>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.6</version>
+				<!-- 跳过测试 -->
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+
+			</plugin>
+			<!-- <plugin> -->
+			<!-- <artifactId>maven-assembly-plugin</artifactId> -->
+			<!-- <configuration> -->
+			<!-- <descriptorRefs> -->
+			<!-- <descriptorRef>jar-with-dependencies</descriptorRef> -->
+			<!-- </descriptorRefs> -->
+			<!-- </configuration> -->
+			<!-- </plugin> -->
+		</plugins>
+	</build>
+
+</project>

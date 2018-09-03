@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.PledgeBondQuoteResMessageDao">
+	<resultMap id="BaseResultMap"
+		type="com.xquant.platform.component.mock.dto.cfets.MockCollateralDialogueQuoteResMessageBody">
+		<result column="TRADERID" property="traderID" jdbcType="VARCHAR" />
+		<result column="UPDATETIME" property="updateTime" jdbcType="VARCHAR" />
+		<result column="MARKETINDICATOR" property="marketIndicator" jdbcType="VARCHAR" />
+		<result column="SETTLCURRENCY" property="settlCurrency" jdbcType="VARCHAR" />
+		<result column="TEXT" property="text" jdbcType="VARCHAR" />
+		<result column="QUOTEID" property="quoteID" jdbcType="VARCHAR" />
+		<result column="TRADELIMITDAYS" property="tradeLimitDays" jdbcType="VARCHAR" />
+		<result column="STATUS" property="status" jdbcType="DECIMAL" />
+		<result column="QUOTETYPE" property="quoteType" jdbcType="DECIMAL" />
+		<result column="COUNTER_TRADERID" property="counterTraderID" jdbcType="VARCHAR" />
+		<result column="CLIENT_ID" property="clientId" jdbcType="VARCHAR" />
+		<result column="QUOTETRANSTYPE" property="quoteTransType" jdbcType="VARCHAR" />
+		<result column="ERRORCODE" property="errorCode" jdbcType="VARCHAR" />
+		<result column="ACCRUEDINTERESTAMT" property="accruedInterestAmt" jdbcType="VARCHAR" />
+		<result column="COUNTER_PARTYNAME" property="counterPartyName" jdbcType="VARCHAR" />
+		<result column="NEGOTIATIONCOUNT" property="negotiationCount" jdbcType="DECIMAL" />
+		<result column="PORTFOLIO" property="portfolio" jdbcType="VARCHAR" />
+		<result column="DELIVERYTYPE2" property="deliveryType2" jdbcType="DECIMAL" />
+		<result column="SECURITYID" property="securityID" jdbcType="VARCHAR" />
+		<result column="SECURITYTYPE" property="securityType" jdbcType="VARCHAR" />
+		<result column="CLORDID" property="clOrdID" jdbcType="VARCHAR" />
+		<result column="COUNTER_TRADERNAME" property="counterTraderName" jdbcType="VARCHAR" />
+		<result column="PRICE" property="price" jdbcType="VARCHAR" />
+		<result column="ERRORMSG" property="errorMsg" jdbcType="VARCHAR" />
+		<result column="TRADERNAME" property="traderName" jdbcType="VARCHAR" />
+		<result column="COUNTER_PARTYID" property="counterPartyID" jdbcType="VARCHAR" />
+		<result column="REPOMETHOD" property="repoMethod" jdbcType="DECIMAL" />
+		<result column="PARTYID" property="partyID" jdbcType="VARCHAR" />
+		<result column="TRANSACTTIME" property="transactTime" jdbcType="VARCHAR" />
+		<result column="CASH_ACCT_NUMBER" property="cashAcctNumber" jdbcType="VARCHAR" />
+		<result column="VALIDUNTILTIME" property="validUntilTime" jdbcType="VARCHAR" />
+		<result column="CLEARINGMETHOD" property="clearingMethod" jdbcType="DECIMAL" />
+		<result column="QID" property="qid" jdbcType="DECIMAL" />
+		<result column="SETTLTYPE" property="settlType" jdbcType="VARCHAR" />
+		<result column="CASH_BANK_NAME" property="cashBankName" jdbcType="VARCHAR" />
+		<result column="SIDE" property="side" jdbcType="VARCHAR" />
+		<result column="MYSIDE" property="myside" jdbcType="VARCHAR" />
+		<result column="CUSTODIAN_ACCT_NUMBER" property="custodianAcctNumber" jdbcType="VARCHAR" />
+		<result column="CASHHOLDINGDAYS" property="cashHoldingDays" jdbcType="DECIMAL" />
+		<result column="ACTION" property="action" jdbcType="VARCHAR" />
+		<result column="CLORDID_CLIENT_ID" property="clOrdIDClientID" jdbcType="VARCHAR" />
+		<result column="SETTLDATE2" property="settlDate2" jdbcType="VARCHAR" />
+		<result column="SETTLCURRAMT2" property="settlCurramt2" jdbcType="VARCHAR" />
+		<result column="CUSTODIAN_INSTITUTION_NAME" property="custodianInstitutionName" jdbcType="VARCHAR" />
+		<result column="SETTLDATE" property="settlDate" jdbcType="VARCHAR" />
+		<result column="DELIVERYTYPE" property="deliveryType" jdbcType="DECIMAL" />
+		<result column="TRADECASHAMT" property="tradeCashAmt" jdbcType="VARCHAR" />
+		<result column="PARTYNAME" property="partyName" jdbcType="VARCHAR" />
+		<result column="SEND_RECV_FLAG" property="sendOrRecv" jdbcType="VARCHAR" />
+		<result column="ISQUOTERESPONSE" property="isQuoteResponse" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="BaseColumn">
+		ISQUOTERESPONSE,
+		SEND_RECV_FLAG,
+		TRADERID,
+		UPDATETIME,
+		MARKETINDICATOR,
+		SETTLCURRENCY,
+		TEXT,
+		QUOTEID,
+		TRADELIMITDAYS,
+		STATUS,
+		QUOTETYPE,
+		COUNTER_TRADERID,
+		CLIENT_ID,
+		QUOTETRANSTYPE,
+		ERRORCODE,
+		ACCRUEDINTERESTAMT,
+		COUNTER_PARTYNAME,
+		NEGOTIATIONCOUNT,
+		PORTFOLIO,
+		DELIVERYTYPE2,
+		SECURITYID,
+		SECURITYTYPE,
+		CLORDID,
+		COUNTER_TRADERNAME,
+		PRICE,
+		ERRORMSG,
+		TRADERNAME,
+		COUNTER_PARTYID,
+		REPOMETHOD,
+		PARTYID,
+		TRANSACTTIME,
+		CASH_ACCT_NUMBER,
+		VALIDUNTILTIME,
+		CLEARINGMETHOD,
+		QID,
+		SETTLTYPE,
+		CASH_BANK_NAME,
+		SIDE,
+		MYSIDE,
+		CUSTODIAN_ACCT_NUMBER,
+		CASHHOLDINGDAYS,
+		ACTION,
+		CLORDID_CLIENT_ID,
+		SETTLDATE2,
+		SETTLCURRAMT2,
+		CUSTODIAN_INSTITUTION_NAME,
+		SETTLDATE,
+		DELIVERYTYPE,
+		TRADECASHAMT,
+		PARTYNAME
+	</sql>
+
+	<sql id="baseValue">
+		#{isQuoteResponse,jdbcType=VARCHAR},
+		#{sendOrRecv,jdbcType=VARCHAR},
+		#{traderID,jdbcType=VARCHAR},
+		#{updateTime,jdbcType=VARCHAR},
+		#{marketIndicator,jdbcType=VARCHAR},
+		#{settlCurrency,jdbcType=VARCHAR},
+		#{text,jdbcType=VARCHAR},
+		#{quoteID,jdbcType=VARCHAR},
+		#{tradeLimitDays,jdbcType=VARCHAR},
+		#{status,jdbcType=DECIMAL},
+		#{quoteType,jdbcType=DECIMAL},
+		#{counterTraderID,jdbcType=VARCHAR},
+		#{clientId,jdbcType=VARCHAR},
+		#{quoteTransType,jdbcType=VARCHAR},
+		#{errorCode,jdbcType=VARCHAR},
+		#{accruedInterestAmt,jdbcType=VARCHAR},
+		#{counterPartyName,jdbcType=VARCHAR},
+		#{negotiationCount,jdbcType=DECIMAL},
+		#{portfolio,jdbcType=VARCHAR},
+		#{deliveryType2,jdbcType=DECIMAL},
+		#{securityID,jdbcType=VARCHAR},
+		#{securityType,jdbcType=VARCHAR},
+		#{clOrdID,jdbcType=VARCHAR},
+		#{counterTraderName,jdbcType=VARCHAR},
+		#{price,jdbcType=VARCHAR},
+		#{errorMsg,jdbcType=VARCHAR},
+		#{traderName,jdbcType=VARCHAR},
+		#{counterPartyID,jdbcType=VARCHAR},
+		#{repoMethod,jdbcType=DECIMAL},
+		#{partyID,jdbcType=VARCHAR},
+		#{transactTime,jdbcType=VARCHAR},
+		#{cashAcctNumber,jdbcType=VARCHAR},
+		#{validUntilTime,jdbcType=VARCHAR},
+		#{clearingMethod,jdbcType=DECIMAL},
+		#{qid,jdbcType=DECIMAL},
+		#{settlType,jdbcType=VARCHAR},
+		#{cashBankName,jdbcType=VARCHAR},
+		#{side,jdbcType=VARCHAR},
+		#{myside,jdbcType=VARCHAR},
+		#{custodianAcctNumber,jdbcType=VARCHAR},
+		#{cashHoldingDays,jdbcType=DECIMAL},
+		#{action,jdbcType=VARCHAR},
+		#{clOrdIDClientID,jdbcType=VARCHAR},
+		#{settlDate2,jdbcType=VARCHAR},
+		#{settlCurramt2,jdbcType=VARCHAR},
+		#{custodianInstitutionName,jdbcType=VARCHAR},
+		#{settlDate,jdbcType=VARCHAR},
+		#{deliveryType,jdbcType=DECIMAL},
+		#{tradeCashAmt,jdbcType=VARCHAR},
+		#{partyName,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert" parameterType="com.xquant.platform.component.mock.dto.cfets.MockCollateralDialogueQuoteResMessageBody">
+		INSERT INTO TTRD_CFETS_TRADE_DLG
+		(
+		<include refid="BaseColumn" />
+		)
+		VALUES
+		(
+		<include refid="baseValue" />
+		)
+	</insert>
+
+	<select id="queryByQuoteId" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM ttrd_cfets_trade_dlg
+		WHERE QUOTEID = #{quoteId}
+	</select>
+
+	<select id="countUnFinalQuoteAfterTime" parameterType="String" resultType="int">
+		SELECT count(1)
+		FROM TTRD_CFETS_TRADE_DLG
+		WHERE
+		VALIDUNTILTIME >
+		#{formatTime}
+		AND STATUS IN (5,10)
+		AND MARKETINDICATOR = 9
+	</select>
+
+
+	<select id="queryUnFinalQuoteAfterTime" parameterType="String" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_CFETS_TRADE_DLG
+		WHERE VALIDUNTILTIME > #{formatTime}
+		AND STATUS IN (5,10)
+		AND MARKETINDICATOR = 9
+	</select>
+
+
+</mapper>

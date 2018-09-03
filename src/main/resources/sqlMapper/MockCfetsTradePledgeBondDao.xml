@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.MockCfetsTradePledgeBondDao">
+
+	<resultMap id="BaseResultMap" type="com.xquant.platform.component.mock.dto.cfets.MockCfetsTradePledgeBond">
+		<result column="CLORDID" property="clordid" jdbcType="VARCHAR" />
+		<result column="QUOTEID" property="quoteId" jdbcType="VARCHAR" />
+		<result column="UPDATETIME" property="updateTime" jdbcType="VARCHAR" />
+		<result column="UNDERLYINGQTY" property="underlyingQty" jdbcType="VARCHAR" />
+		<result column="UNDERLYINGSTIPVALUE" property="underlyingStipvalue" jdbcType="VARCHAR" />
+		<result column="CLIENT_ID" property="clientId" jdbcType="VARCHAR" />
+		<result column="UNDERLYINGSECURITYID" property="underlyingSecurityid" jdbcType="VARCHAR" />
+		<result column="CLORDID_CLIENT_ID" property="clordidClientId" jdbcType="VARCHAR" />
+		<result column="UNDERLYINGSYMBOL" property="underlyingSymbol" jdbcType="VARCHAR" />
+		<result column="QID" property="qid" jdbcType="DECIMAL" />
+	</resultMap>
+
+	<sql id="BaseColumn">
+		CLORDID,
+		QUOTEID,
+		UPDATETIME,
+		UNDERLYINGQTY,
+		UNDERLYINGSTIPVALUE,
+		CLIENT_ID,
+		UNDERLYINGSECURITYID,
+		CLORDID_CLIENT_ID,
+		UNDERLYINGSYMBOL,
+		QID
+	</sql>
+
+	<sql id="baseValue">
+		#{clordid,jdbcType=VARCHAR},
+		#{quoteId,jdbcType=VARCHAR},
+		#{updateTime,jdbcType=VARCHAR},
+		#{underlyingQty,jdbcType=VARCHAR},
+		#{underlyingStipvalue,jdbcType=VARCHAR},
+		#{clientId,jdbcType=VARCHAR},
+		#{underlyingSecurityid,jdbcType=VARCHAR},
+		#{clordidClientId,jdbcType=VARCHAR},
+		#{underlyingSymbol,jdbcType=VARCHAR},
+		#{qid,jdbcType=DECIMAL}
+	</sql>
+
+
+	<insert id="insert" parameterType="com.xquant.platform.component.mock.dto.cfets.MockCfetsTradePledgeBond">
+
+		INSERT INTO TTRD_CFETS_TRADE_PLEDGEBOND
+		(
+		<include refid="BaseColumn" />
+		)
+		VALUES
+		(
+		<include refid="baseValue" />
+		)
+
+	</insert>
+	
+	<delete id="delete">
+	   delete from TTRD_CFETS_TRADE_PLEDGEBOND WHERE QUOTEID = #{quoteId}
+	</delete>
+
+	<select id="queryByQuoteId" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_CFETS_TRADE_PLEDGEBOND
+		WHERE QUOTEID = #{quoteId}
+	</select>
+
+</mapper>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.BondClickDealQuoteResMessageDao">
+	<resultMap id="BaseResultMap" type="com.xquant.platform.component.mock.dto.cfets.MockBondClickDealQuoteResMessageBody">
+		<result column="TRADERID" property="traderID" jdbcType="VARCHAR" />
+		<result column="UPDATETIME" property="updateTime" jdbcType="VARCHAR" />
+		<result column="MARKETINDICATOR" property="marketIndicator" jdbcType="VARCHAR" />
+		<result column="SETTLCURRFXRATE" property="settlCurrFxRate" jdbcType="VARCHAR" />
+		<result column="SETTLCURRENCY" property="settlCurrency" jdbcType="VARCHAR" />
+		<result column="ORDERQTY" property="orderQty" jdbcType="VARCHAR" />
+		<result column="QUOTEID" property="quoteID" jdbcType="VARCHAR" />
+		<result column="STATUS" property="status" jdbcType="DECIMAL" />
+		<result column="QUOTETYPE" property="quoteType" jdbcType="DECIMAL" />
+		<result column="CLIENT_ID" property="clientId" jdbcType="VARCHAR" />
+		<result column="QUOTETRANSTYPE" property="quoteTransType" jdbcType="VARCHAR" />
+		<result column="ERRORCODE" property="errorCode" jdbcType="VARCHAR" />
+		<result column="PORTFOLIO" property="portfolio" jdbcType="VARCHAR" />
+		<result column="SECURITYTYPE" property="securityType" jdbcType="VARCHAR" />
+		<result column="SECURITYID" property="securityID" jdbcType="VARCHAR" />
+		<result column="STRIKEYIELD" property="strikeYield" jdbcType="VARCHAR" />
+		<result column="CLORDID" property="clOrdID" jdbcType="VARCHAR" />
+		<result column="ANONYMOUSINDICATOR" property="anonymousIndicator" jdbcType="VARCHAR" />
+		<result column="PRICE" property="price" jdbcType="VARCHAR" />
+		<result column="ERRORMSG" property="errorMsg" jdbcType="VARCHAR" />
+		<result column="TRADERNAME" property="traderName" jdbcType="VARCHAR" />
+		<result column="PARTYID" property="partyID" jdbcType="VARCHAR" />
+		<result column="TRANSACTTIME" property="transactTime" jdbcType="VARCHAR" />
+		<result column="MINTICKSIZE" property="minTickSize" jdbcType="VARCHAR" />
+		<result column="CASH_ACCT_NUMBER" property="cashAcctNumber" jdbcType="VARCHAR" />
+		<result column="VALIDUNTILTIME" property="validUntilTime" jdbcType="VARCHAR" />
+		<result column="CLEARINGMETHOD" property="clearingMethod" jdbcType="VARCHAR" />
+		<result column="QID" property="qid" jdbcType="DECIMAL" />
+		<result column="SETTLTYPE" property="settlType" jdbcType="VARCHAR" />
+		<result column="CASH_BANK_NAME" property="cashBankName" jdbcType="VARCHAR" />
+		<result column="MAXFLOOR" property="maxFloor" jdbcType="VARCHAR" />
+		<result column="SIDE" property="side" jdbcType="DECIMAL" />
+		<result column="CUSTODIAN_ACCT_NUMBER" property="custodianAcctNumber" jdbcType="VARCHAR" />
+		<result column="ACTION" property="action" jdbcType="VARCHAR" />
+		<result column="CLORDID_CLIENT_ID" property="clOrdIDClientID" jdbcType="VARCHAR" />
+		<result column="CUSTODIAN_INSTITUTION_NAME" property="custodianInstitutionName" jdbcType="VARCHAR" />
+		<result column="MATURITYYIELD" property="maturityYield" jdbcType="VARCHAR" />
+		<result column="DELIVERYTYPE" property="deliveryType" jdbcType="VARCHAR" />
+		<result column="PARTYNAME" property="partyName" jdbcType="VARCHAR" />
+		<result column="SEND_RECV_FLAG" property="sendOrRecv" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="BaseColumn">
+		TRADERID,
+		UPDATETIME,
+		MARKETINDICATOR,
+		SETTLCURRFXRATE,
+		SETTLCURRENCY,
+		ORDERQTY,
+		QUOTEID,
+		STATUS,
+		QUOTETYPE,
+		CLIENT_ID,
+		QUOTETRANSTYPE,
+		ERRORCODE,
+		PORTFOLIO,
+		SECURITYTYPE,
+		SECURITYID,
+		STRIKEYIELD,
+		CLORDID,
+		ANONYMOUSINDICATOR,
+		PRICE,
+		ERRORMSG,
+		TRADERNAME,
+		PARTYID,
+		TRANSACTTIME,
+		MINTICKSIZE,
+		CASH_ACCT_NUMBER,
+		VALIDUNTILTIME,
+		CLEARINGMETHOD,
+		QID,
+		SETTLTYPE,
+		CASH_BANK_NAME,
+		MAXFLOOR,
+		SIDE,
+		CUSTODIAN_ACCT_NUMBER,
+		ACTION,
+		CLORDID_CLIENT_ID,
+		CUSTODIAN_INSTITUTION_NAME,
+		MATURITYYIELD,
+		DELIVERYTYPE,
+		PARTYNAME,
+		SEND_RECV_FLAG
+	</sql>
+
+	<sql id="baseValue">
+		#{traderID,jdbcType=VARCHAR},
+		#{updateTime,jdbcType=VARCHAR},
+		#{marketIndicator,jdbcType=VARCHAR},
+		#{settlCurrFxRate,jdbcType=VARCHAR},
+		#{settlCurrency,jdbcType=VARCHAR},
+		#{orderQty,jdbcType=VARCHAR},
+		#{quoteID,jdbcType=VARCHAR},
+		#{status,jdbcType=DECIMAL},
+		#{quoteType,jdbcType=DECIMAL},
+		#{clientId,jdbcType=VARCHAR},
+		#{quoteTransType,jdbcType=VARCHAR},
+		#{errorCode,jdbcType=VARCHAR},
+		#{portfolio,jdbcType=VARCHAR},
+		#{securityType,jdbcType=VARCHAR},
+		#{securityID,jdbcType=VARCHAR},
+		#{strikeYield,jdbcType=VARCHAR},
+		#{clOrdID,jdbcType=VARCHAR},
+		#{anonymousIndicator,jdbcType=VARCHAR},
+		#{price,jdbcType=VARCHAR},
+		#{errorMsg,jdbcType=VARCHAR},
+		#{traderName,jdbcType=VARCHAR},
+		#{partyID,jdbcType=VARCHAR},
+		#{transactTime,jdbcType=VARCHAR},
+		#{minTickSize,jdbcType=VARCHAR},
+		#{cashAcctNumber,jdbcType=VARCHAR},
+		#{validUntilTime,jdbcType=VARCHAR},
+		#{clearingMethod,jdbcType=VARCHAR},
+		#{qid,jdbcType=DECIMAL},
+		#{settlType,jdbcType=VARCHAR},
+		#{cashBankName,jdbcType=VARCHAR},
+		#{maxFloor,jdbcType=VARCHAR},
+		#{side,jdbcType=DECIMAL},
+		#{custodianAcctNumber,jdbcType=VARCHAR},
+		#{action,jdbcType=VARCHAR},
+		#{clOrdIDClientID,jdbcType=VARCHAR},
+		#{custodianInstitutionName,jdbcType=VARCHAR},
+		#{maturityYield,jdbcType=VARCHAR},
+		#{deliveryType,jdbcType=VARCHAR},
+		#{partyName,jdbcType=VARCHAR},
+		#{sendOrRecv,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert" parameterType="com.xquant.platform.component.mock.dto.cfets.MockBondClickDealQuoteResMessageBody">
+		INSERT INTO TTRD_CFETS_TRADE_CD
+		(
+		<include refid="BaseColumn" />
+		)
+		VALUES
+		(
+		<include refid="baseValue" />
+		)
+	</insert>
+
+	<update id="updateStatus">	
+		update TTRD_CFETS_TRADE_CD
+		<set>
+			<if test="status !=null">
+				STATUS = #{status},
+			</if>
+			<if test="transactTime !=null">
+				TRANSACTTIME = #{transactTime},
+			</if>
+			<if test="quoteTransType !=null">
+				QUOTETRANSTYPE = #{quoteTransType},
+			</if>
+		</set>
+		WHERE QUOTEID = #{quoteId}
+	</update>
+
+	<delete id="delete">
+		delete from TTRD_CFETS_TRADE_CD WHERE QUOTEID =
+		#{quoteId}
+	</delete>
+
+	<select id="queryByQuoteId" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_CFETS_TRADE_CD
+		WHERE QUOTEID = #{quoteId}
+	</select>
+	
+		<select id="countUnFinalQuoteAfterTime" parameterType="String" resultType="int">
+		SELECT count(1)
+		FROM TTRD_CFETS_TRADE_CD
+		WHERE
+		VALIDUNTILTIME >
+		#{formatTime}
+		AND STATUS IN (5,10)
+		AND MARKETINDICATOR = 4
+	</select>
+
+
+	<select id="queryUnFinalQuoteAfterTime" parameterType="String" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_CFETS_TRADE_CD
+		WHERE VALIDUNTILTIME > #{formatTime}
+		AND STATUS IN (5,10)
+		AND MARKETINDICATOR = 4
+	</select>
+
+
+</mapper>

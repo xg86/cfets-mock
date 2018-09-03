@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.XSwapOrderActionResMessageDao">
+	<resultMap id="BaseResultMap" type="xquant.xswap.protocol.XSwapOrderActionResBody">
+		<result column="CLIENTREQID" property="clientReqID" jdbcType="VARCHAR" />
+		<result column="PARTY" property="party" jdbcType="VARCHAR" />
+		<result column="STATUS" property="status" jdbcType="DECIMAL" />
+		<result column="SERIALNO" property="serialNo" jdbcType="VARCHAR" />
+		<result column="TRADER" property="trader" jdbcType="VARCHAR" />
+		<result column="SYSREQID" property="sysReqID" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="BaseColumn">
+		CLIENTREQID,
+		PARTY,
+		STATUS,
+		SERIALNO,
+		TRADER,
+		SYSREQID
+	</sql>
+
+	<sql id="baseValue">
+		#{clientReqID,jdbcType=VARCHAR},
+		#{party,jdbcType=VARCHAR},
+		#{status,jdbcType=DECIMAL},
+		#{serialNo,jdbcType=VARCHAR},
+		#{trader,jdbcType=VARCHAR},
+		#{sysReqID,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert" parameterType="xquant.xswap.protocol.XSwapOrderActionResBody">
+		INSERT INTO TTRD_XSWAP_ORDER
+		(
+		<include refid="BaseColumn" />
+		,UPDATETIME,CLIENT_ID)
+		VALUES
+		(
+		<include refid="baseValue" />
+		,NOW(),'DEFAULT')
+	</insert>
+
+	<update id="updateStatus">
+		update TTRD_XSWAP_ORDER
+		<if test="status != null">STATUS = #{status},</if>
+		<if test="transactTime != null">TRANSACTTIME = #{transactTime},</if>
+		<if test="myside != null">MYSIDE = #{myside}</if>
+		<if test="clientId != null">CLIENT_ID = #{clientId}</if>
+		WHERE QUOTEID = #{quoteId}
+	</update>
+
+	<delete id="delete">
+		delete from TTRD_XSWAP_ORDER WHERE QUOTEID =
+		#{quoteId}
+	</delete>
+
+	<select id="queryByQuoteId" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_XSWAP_ORDER
+		WHERE QUOTEID = #{quoteId}
+	</select>
+
+
+</mapper>

@@ -1,0 +1,28 @@
+<root>
+  <header>
+    <action>1204</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>20180612014893</serialNo>
+    <version>1.0.006</version>
+    <msgType>P</msgType>
+    <sendingTime>2018-06-12 11:02:29.724</sendingTime>
+    <from></from>
+    <operator>AUTO</operator>
+    <password></password>
+    <errorCode>0</errorCode>
+    <errorInfo></errorInfo>
+  </header>
+  <body>
+    <serialNo>20180612007343</serialNo>
+    <clientReqID>1105889</clientReqID>
+    <operateSeqNum>XT2018061200002813</operateSeqNum>
+    <origOperateSeqNum>ORDE20180612hzhttapi01000302</origOperateSeqNum>
+    <orderID>2018061200000039</orderID>
+    <ordStatus>4</ordStatus>
+    <text>4</text>
+    <execType>I</execType>
+    <leavesQty>100000000</leavesQty>
+    <party>179001533010000401021</party>
+    <trader>hzhtcsdealer</trader>
+  </body>
+</root>

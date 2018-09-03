@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xquant.platform.component.mock.dao.XSwapOrderResMessageDao">
+	<resultMap id="BaseResultMap" type="xquant.xswap.protocol.XSwapOrderResBody">
+		<result column="SECURITYID" property="securityID" jdbcType="VARCHAR" />
+		<result column="SECURITYTYPE" property="securityType" jdbcType="VARCHAR" />
+		<result column="PARTY" property="party" jdbcType="VARCHAR" />
+		<result column="ORDERREQUESTID" property="orderRequestID" jdbcType="VARCHAR" />
+		<result column="ORDTYPE" property="ordType" jdbcType="VARCHAR" />
+		<result column="PRICE" property="price" jdbcType="VARCHAR" />
+		<result column="MARKETINDICATOR" property="marketIndicator" jdbcType="VARCHAR" />
+		<result column="FB_ORDERID" property="fb_OrderID" jdbcType="VARCHAR" />
+		<result column="CLEARINGMETHOD" property="clearingMethod" jdbcType="DECIMAL" />
+		<result column="FB_OPERATESEQNUM" property="fb_OperateSeqNum" jdbcType="VARCHAR" />
+		<result column="CLIENTREQID" property="clientReqID" jdbcType="VARCHAR" />
+		<result column="ORDERQTY" property="orderQty" jdbcType="VARCHAR" />
+		<result column="ORDTIME" property="ordTime" jdbcType="VARCHAR" />
+		<result column="SIDE" property="side" jdbcType="VARCHAR" />
+		<result column="STATUS" property="status" jdbcType="DECIMAL" />
+		<result column="FB_TRANSACTTIME" property="fb_TransactTime" jdbcType="VARCHAR" />
+		<result column="SERIALNO" property="serialNo" jdbcType="VARCHAR" />
+		<result column="TRADER" property="trader" jdbcType="VARCHAR" />
+		<result column="ORDDATE" property="ordDate" jdbcType="VARCHAR" />
+		<result column="EXPIRETIME" property="expireTime" jdbcType="VARCHAR" />
+		<result column="SYSREQID" property="sysReqID" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="BaseColumn">
+		SECURITYID,
+		SECURITYTYPE,
+		PARTY,
+		ORDERREQUESTID,
+		ORDTYPE,
+		PRICE,
+		MARKETINDICATOR,
+		FB_ORDERID,
+		CLEARINGMETHOD,
+		FB_OPERATESEQNUM,
+		CLIENTREQID,
+		ORDERQTY,
+		ORDTIME,
+		SIDE,
+		STATUS,
+		FB_TRANSACTTIME,
+		SERIALNO,
+		TRADER,
+		ORDDATE,
+		EXPIRETIME,
+		SYSREQID
+	</sql>
+
+	<sql id="baseValue">
+		#{securityID,jdbcType=VARCHAR},
+		#{securityType,jdbcType=VARCHAR},
+		#{party,jdbcType=VARCHAR},
+		#{orderRequestID,jdbcType=VARCHAR},
+		#{ordType,jdbcType=VARCHAR},
+		#{price,jdbcType=VARCHAR},
+		#{marketIndicator,jdbcType=VARCHAR},
+		#{fb_OrderID,jdbcType=VARCHAR},
+		#{clearingMethod,jdbcType=DECIMAL},
+		#{fb_OperateSeqNum,jdbcType=VARCHAR},
+		#{clientReqID,jdbcType=VARCHAR},
+		#{orderQty,jdbcType=VARCHAR},
+		#{ordTime,jdbcType=VARCHAR},
+		#{side,jdbcType=VARCHAR},
+		#{status,jdbcType=DECIMAL},
+		#{fb_TransactTime,jdbcType=VARCHAR},
+		#{serialNo,jdbcType=VARCHAR},
+		#{trader,jdbcType=VARCHAR},
+		#{ordDate,jdbcType=VARCHAR},
+		#{expireTime,jdbcType=VARCHAR},
+		#{sysReqID,jdbcType=VARCHAR}
+	</sql>
+
+
+	<insert id="insert" parameterType="xquant.xswap.protocol.XSwapOrderResBody">
+		INSERT INTO TTRD_XSWAP_ORDER
+		(
+		<include refid="BaseColumn" />
+		,UPDATETIME,CLIENTID,ERRCODE)
+		VALUES
+		(
+		<include refid="baseValue" />
+		,NOW(),'DEFAULT','0')
+	</insert>
+
+	<update id="updateStatus">
+		update TTRD_XSWAP_ORDER
+		<set>
+			<if test="status != null">STATUS = #{status},</if>
+			<if test="transactTime != null">FB_TRANSACTTIME = #{transactTime},</if>
+			<if test="clientId != null">CLIENTID = #{clientId}</if>
+		</set>
+		WHERE FB_ORDERID = #{quoteId}
+	</update>
+
+	<delete id="delete">
+		delete from TTRD_XSWAP_ORDER WHERE FB_ORDERID =
+		#{quoteId}
+	</delete>
+
+	<select id="queryByQuoteId" resultMap="BaseResultMap">
+		SELECT
+		<include refid="BaseColumn" />
+		FROM TTRD_XSWAP_ORDER
+		WHERE FB_ORDERID = #{quoteId}
+	</select>
+
+
+</mapper>

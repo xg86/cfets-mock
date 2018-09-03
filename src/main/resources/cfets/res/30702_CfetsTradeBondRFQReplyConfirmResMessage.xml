@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>4003</action>
+    <clientID>xIR2</clientID>
+    <serialNo>559</serialNo>
+    <version>1.0.006</version>
+    <msgType>P</msgType>
+    <sendingTime>20171229-11:34:52.084</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+    <errorMsg></errorMsg>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201712290420000061</clOrdIDClientID>
+    <marketIndicator>4</marketIndicator>
+    <securityType>CBT</securityType>
+    <quoteType>113</quoteType>
+    <quoteRespType>1</quoteRespType>
+    <quoteID>201712290420000061</quoteID>
+    <transactTime>20171229-11:33:35.921</transactTime>
+    <securityID>1080023</securityID>
+    <side>2</side>
+    <maturityYield>4.7983</maturityYield>
+    <strikeYield></strikeYield>
+    <price>100.0000</price>
+    <orderQty>10000000</orderQty>
+    <settlCurrAmt>10433972.60</settlCurrAmt>
+    <settlCurrency>CNY</settlCurrency>
+    <settlCurrFxRate></settlCurrFxRate>
+    <deliveryType>0</deliveryType>
+    <clearingMethod>13</clearingMethod>
+    <settlType>2</settlType>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsdealer</traderID>
+    <custodianAcctNumber>0980980987</custodianAcctNumber>
+    <cashAcctNumber>98769876987607</cashAcctNumber>
+    <serialNo>201712290000001424</serialNo>
+    <qid>1195</qid>
+    <clOrdID>ODhzhttrd000001194</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+    <errorMsg></errorMsg>
+  </body>
+</root>

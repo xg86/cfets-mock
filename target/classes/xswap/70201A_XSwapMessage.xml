@@ -1,0 +1,15 @@
+<root>
+  <header>
+    <action>1203</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>20180612007348</serialNo>
+    <version>1.0.006</version>
+    <msgType>A</msgType>
+    <sendingTime>2018-06-12 11:02:28.687</sendingTime>
+    <from></from>
+    <operator></operator>
+    <password></password>
+    <errorCode>0</errorCode>
+    <errorInfo></errorInfo>
+  </header>
+</root>
