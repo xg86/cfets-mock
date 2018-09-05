@@ -14,7 +14,7 @@ import com.xquant.platform.component.mock.dto.MockMessageInfo;
 
 @Component
 public class MessageInfoBuilderManager4ExecutionReport {
-	
+
 	protected Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@SuppressWarnings("rawtypes")
@@ -38,7 +38,7 @@ public class MessageInfoBuilderManager4ExecutionReport {
 	public MockMessageInfo build(Object messageTempldate, Object originMessage, OpTypeEnum optype, Date triggerTime) {
 		try {
 			checkBeforeBuild(messageTempldate, originMessage, optype);
-			IMockMessageInfoBuilder4ExcutionReport builder = getSupportBuilder(messageTempldate.getClass(), optype);
+			IMockMessageInfoBuilder4ExcutionReport builder = getSupportBuilder(originMessage.getClass(), optype);
 			MockMessageInfo mockMessageInfo = builder.build(messageTempldate, originMessage, triggerTime, optype);
 			checkBeforeReturn(mockMessageInfo);
 			return mockMessageInfo;
@@ -55,8 +55,7 @@ public class MessageInfoBuilderManager4ExecutionReport {
 				return iMockMessageInfoBuilder;
 			}
 		}
-		throw new RuntimeException(
-				"根据当前信息无法获取Object的构造器,对应的报价对象类型和报价类型为 " + type.getSimpleName() + ",+opType = " + optype);
+		throw new RuntimeException("根据当前信息无法获取Object的构造器,对应的报价对象类型和报价类型为 " + type.getSimpleName() + ",+opType = " + optype);
 	}
 
 	/**

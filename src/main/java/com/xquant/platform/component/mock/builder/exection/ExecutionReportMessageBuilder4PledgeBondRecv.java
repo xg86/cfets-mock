@@ -57,6 +57,7 @@ public class ExecutionReportMessageBuilder4PledgeBondRecv
 		header.setSendingTime(MockDateTimeUtil.getTransactimeOfNow());
 		header.setClientID(queryByQuoteId.getClientId());
 
+		body.setSecuritytype(queryByQuoteId.getSecurityType());
 		body.setQid(queryByQuoteId.getQid());
 		body.setClientID(queryByQuoteId.getClientId());
 		body.setClOrdIDClientID(queryByQuoteId.getClOrdIDClientID());

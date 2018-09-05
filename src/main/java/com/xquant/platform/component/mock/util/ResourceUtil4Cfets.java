@@ -1388,8 +1388,8 @@ public class ResourceUtil4Cfets {
 	private final static String DLG_RES_EXECUTION_REPORT = "cfets/recv/80101_CfetsTradeExecutionReportMessage.xml";
 	private final static String PLEDGE_RES_EXECUTION_REPORT = "cfets/recv/80201_CfetsTradeExecutionReportMessage.xml";
 	private final static String REPLY_RES_EXECUTION_REPORT = "cfets/recv/80601_CfetsTradeExecutionReportMessage.xml";
-	private final static String DLG_RECV_EXECUTION_REPORT = "cfets/recv/80202_CfetsTradeExecutionReportMessage.xml";
-	private final static String PLEDGE_RECV_EXECUTION_REPORT = "cfets/recv/80103_CfetsTradeExecutionReportMessage.xml";
+	private final static String DLG_RECV_EXECUTION_REPORT = "cfets/recv/80102_CfetsTradeExecutionReportMessage.xml";
+	private final static String PLEDGE_RECV_EXECUTION_REPORT = "cfets/recv/80202_CfetsTradeExecutionReportMessage.xml";
 	private final static String REPLY_RECV_EXECUTION_REPORT = "cfets/recv/80602_CfetsTradeExecutionReportMessage.xml";
 
 	/**

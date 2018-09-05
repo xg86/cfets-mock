@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.xquant.cfets.trade.protocol.message.CfetsTradeExecutionReportMessage;
 import com.xquant.platform.component.mock.service.push.TradeMessagePushService;
 
 @Component
@@ -23,7 +24,19 @@ public class MessagePersistManagerDelegate {
 
 	@SuppressWarnings("unchecked")
 	public void handle(Object obj) {
+		
+	
+		
 		try {
+			
+			/**
+			 * 成交回报消息不需要入库处理
+			 */
+			if(CfetsTradeExecutionReportMessage.class.isInstance(obj)) {
+				TradeMessagePushService.addMessage(obj);
+				return;
+			}
+			
 			if (getSupportManager(obj).handle(obj)) {
 				TradeMessagePushService.addMessage(obj);
 			}

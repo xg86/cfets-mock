@@ -57,6 +57,7 @@ public class ExecutionReportMessageBuilder4BondDlgRes
 		header.setSendingTime(MockDateTimeUtil.getTransactimeOfNow());
 		header.setClientID(queryByQuoteId.getClientId());
 		
+		body.setSecuritytype(queryByQuoteId.getSecurityType());
 		body.setQid(queryByQuoteId.getQid());
 		body.setClientID(queryByQuoteId.getClientId());
 		body.setClOrdIDClientID(queryByQuoteId.getClOrdIDClientID());
@@ -65,7 +66,7 @@ public class ExecutionReportMessageBuilder4BondDlgRes
         body.setTradeTime(splitTime[1]);
         body.setQuoteID(originMessage.getBody().getQuoteID());
 		body.setTransactTime(originMessage.getBody().getTransactTime());
-		body.setLastQty(new BigDecimal(queryByQuoteId.getOrderQty()).multiply(new BigDecimal("100")).toString());
+		body.setLastQty(queryByQuoteId.getOrderQty());
 		body.setGrossTradeAmt(queryByQuoteId.getTradeCashAmt());
         body.setSide(queryByQuoteId.getMyside());
         body.setUpdateTime(MockDateTimeUtil.getTransactimeOfNow());

@@ -8,7 +8,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.xquant.cfets.trade.protocol.message.CfetsTradeBondRFQReplyConfirmMessage;
+import com.xquant.cfets.trade.protocol.message.CfetsTradeBondRFQReplyConfirmResMessage;
 import com.xquant.cfets.trade.protocol.message.CfetsTradeExecutionReportMessage;
 import com.xquant.cfets.trade.protocol.message.CfetsTradeExecutionReportMessageBody;
 import com.xquant.cfets.trade.protocol.message.CfetsTradeMessageHeader;
@@ -25,19 +25,19 @@ import com.xquant.platform.component.mock.util.MockGenerateUtil;
 
 @Component
 public class ExecutionReportMessageBuilder4BondReplyRes
-		implements IMockMessageInfoBuilder4ExcutionReport<CfetsTradeExecutionReportMessage, CfetsTradeBondRFQReplyConfirmMessage> {
+		implements IMockMessageInfoBuilder4ExcutionReport<CfetsTradeExecutionReportMessage, CfetsTradeBondRFQReplyConfirmResMessage> {
 
 	@Autowired
 	private BondRfqResQuoteRecvMessageDao bondRfqResQuoteRecvMessageDao;
 	
 	@Override
 	public boolean matches(Class<?> cls, OpTypeEnum optype) {
-		return CfetsTradeBondRFQReplyConfirmMessage.class.equals(cls) && OpTypeEnum.BOND_RFQREPLY_CONFIRM.equals(optype);
+		return CfetsTradeBondRFQReplyConfirmResMessage.class.equals(cls) && OpTypeEnum.BOND_RFQREPLY_CONFIRM.equals(optype);
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Override
-	public MockMessageInfo build(CfetsTradeExecutionReportMessage messageTempldate, CfetsTradeBondRFQReplyConfirmMessage originMessage,
+	public MockMessageInfo build(CfetsTradeExecutionReportMessage messageTempldate, CfetsTradeBondRFQReplyConfirmResMessage originMessage,
 			Date triggerTime, OpTypeEnum optype) {
 
 		MockBondRFQReplyReceiveMessageBody queryByQuoteId = bondRfqResQuoteRecvMessageDao.queryByQuoteId(originMessage.getBody().getQuoteID());
@@ -57,6 +57,7 @@ public class ExecutionReportMessageBuilder4BondReplyRes
 		header.setSendingTime(MockDateTimeUtil.getTransactimeOfNow());
 		header.setClientID(queryByQuoteId.getClientID());
 		
+		body.setSecuritytype(queryByQuoteId.getSecurityType());
 		body.setQid(queryByQuoteId.getQid());
 		body.setClientID(queryByQuoteId.getClientID());
 		body.setClOrdIDClientID(queryByQuoteId.getClOrdIDClientID());
@@ -65,7 +66,7 @@ public class ExecutionReportMessageBuilder4BondReplyRes
         body.setTradeTime(splitTime[1]);
         body.setQuoteID(originMessage.getBody().getQuoteID());
 		body.setTransactTime(originMessage.getBody().getTransactTime());
-		body.setLastQty(new BigDecimal(queryByQuoteId.getOrderQty()).multiply(new BigDecimal("100")).toString());
+		body.setLastQty(queryByQuoteId.getOrderQty());
 		body.setGrossTradeAmt(queryByQuoteId.getTradeCashAmt());
         body.setSide(queryByQuoteId.getMyside());
         body.setUpdateTime(MockDateTimeUtil.getTransactimeOfNow());
