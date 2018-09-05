@@ -1,0 +1,28 @@
+<root>
+  <header>
+    <action>3002</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>201808210000214582</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20180821-09:17:01.001</sendingTime>
+    <from>192.168.7.214</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>212764</clOrdIDClientID>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <quoteType>107</quoteType>
+    <validUntilTime>20180821-09:44:56.056</validUntilTime>
+    <securityID>020205</securityID>
+    <bondLegList/>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsapidealer</traderID>
+    <quoteTransType>C</quoteTransType>
+    <origClOrdID>ODhzhttrd022836700</origClOrdID>
+    <quoteID>201808210440000021</quoteID>
+    <transactTime>20180821-09:18:59.185</transactTime>
+  </body>
+</root>

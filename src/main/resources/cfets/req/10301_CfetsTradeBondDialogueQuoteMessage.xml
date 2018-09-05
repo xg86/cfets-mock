@@ -1,0 +1,34 @@
+<root>
+  <header>
+    <action>2000</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>201808210000214559</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20180821-08:34:02.002</sendingTime>
+    <from>192.168.7.214</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>212736</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228278</origClOrdID>
+    <quoteID>201808210420000001</quoteID>
+    <transactTime>20180821-08:35:54.784</transactTime>
+    <quoteTransType>C</quoteTransType>
+    <securityID>1080023</securityID>
+    <side>2</side>
+    <validUntilTime>20180821-09:01:35.035</validUntilTime>
+    <quoteType>1</quoteType>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsapidealer</traderID>
+    <cashAcctNumber>98769876987607</cashAcctNumber>
+    <custodianAcctNumber>0980980987</custodianAcctNumber>
+    <counterPartyID>891012844010011610011</counterPartyID>
+    <counterTraderName>a079</counterTraderName>
+    <counterTraderID>htdealergsab</counterTraderID>
+    <settlCurrency>CNY</settlCurrency>
+  </body>
+</root>

@@ -1,0 +1,23 @@
+<root>
+  <header>
+    <action>2002</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>201808210000214563</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20180821-08:50:26.026</sendingTime>
+    <from>192.168.7.214</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808210420000010</clOrdIDClientID>
+    <quoteType>1</quoteType>
+    <resType>7</resType>
+    <quoteID>201808210420000010</quoteID>
+    <transactTime>20180821-08:52:23.412</transactTime>
+    <settlCurrency>CNY</settlCurrency>
+    <cashAcctNumber>98769876987607</cashAcctNumber>
+    <custodianAcctNumber>0980980987</custodianAcctNumber>
+  </body>
+</root>

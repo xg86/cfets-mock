@@ -1,0 +1,28 @@
+<root>
+  <header>
+    <action>4002</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>201808210000214606</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20180821-10:00:30.030</sendingTime>
+    <from>192.168.7.214</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808210410000079</clOrdIDClientID>
+    <marketIndicator>4</marketIndicator>
+    <securityType>CBT</securityType>
+    <quoteType>112</quoteType>
+    <quoteRequestRejectType>1</quoteRequestRejectType>
+    <quoteID>201808210410000079</quoteID>
+    <transactTime>20180821-10:02:21.803</transactTime>
+    <securityID>010214</securityID>
+    <side>2</side>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsapidealer</traderID>
+    <counterPartyID>891012844010011610011</counterPartyID>
+    <counterTraderID>htdealergsab</counterTraderID>
+  </body>
+</root>

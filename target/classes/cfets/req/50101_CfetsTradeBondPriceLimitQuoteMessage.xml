@@ -1,0 +1,36 @@
+<root>
+  <header>
+    <action>3000</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>201808210000214583</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20180821-09:18:37.037</sendingTime>
+    <from>192.168.7.214</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>212766</clOrdIDClientID>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <ordType>2</ordType>
+    <expireTime>20180821-09:46:37.037</expireTime>
+    <securityID>1080023</securityID>
+    <side>1</side>
+    <price>99.9000</price>
+    <orderQty>10000000</orderQty>
+    <deliveryType>0</deliveryType>
+    <clearingMethod>13</clearingMethod>
+    <settlType>2</settlType>
+    <splitIndicator>Y</splitIndicator>
+    <minTickSize>10000000</minTickSize>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsapidealer</traderID>
+    <custodianInstitutionName>国债登记结算公司</custodianInstitutionName>
+    <custodianAcctNumber>0980980987</custodianAcctNumber>
+    <cashBankName>杭州衡泰测试</cashBankName>
+    <cashAcctNumber>98769876987607</cashAcctNumber>
+    <quoteTransType>N</quoteTransType>
+  </body>
+</root>

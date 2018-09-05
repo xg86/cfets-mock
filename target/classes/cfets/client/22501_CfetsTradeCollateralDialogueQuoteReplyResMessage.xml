@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>2003</action>
+    <clientID>CFETS</clientID>
+    <serialNo>227366</serialNo>
+    <version>1.0.011</version>
+    <msgType>P</msgType>
+    <sendingTime>20180827-19:26:34.324</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808270920000099</clOrdIDClientID>
+    <quoteType>1</quoteType>
+    <resType>7</resType>
+    <quoteID>201808270920000099</quoteID>
+    <transactTime>20180827-19:28:39.313</transactTime>
+    <qid>230030</qid>
+    <clOrdID>994002535396720011</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+  </body>
+</root>

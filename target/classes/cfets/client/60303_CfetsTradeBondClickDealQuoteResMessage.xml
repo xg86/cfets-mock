@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>3001</action>
+    <clientID>CFETS</clientID>
+    <serialNo>227372</serialNo>
+    <version>1.0.011</version>
+    <msgType>P</msgType>
+    <sendingTime>20180827-19:31:21.131</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808270440000135</clOrdIDClientID>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <quoteType>105</quoteType>
+    <quoteTransType>C</quoteTransType>
+    <validUntilTime>20180827-21:10:00.000</validUntilTime>
+    <anonymousIndicator>N</anonymousIndicator>
+    <securityID>010214</securityID>
+    <side>1</side>
+    <partyID>346234623462346234621</partyID>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>a080</traderName>
+    <traderID>htcsdealer</traderID>
+    <quoteID>201808270440000135</quoteID>
+    <transactTime>20180827-19:33:26.168</transactTime>
+    <qid>230039</qid>
+    <clOrdID>994002535396720013</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+  </body>
+</root>

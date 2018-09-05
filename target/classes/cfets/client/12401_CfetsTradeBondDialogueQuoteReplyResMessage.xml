@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>2002</action>
+    <clientID>CFETS</clientID>
+    <serialNo>227354</serialNo>
+    <version>1.0.011</version>
+    <msgType>P</msgType>
+    <sendingTime>20180827-19:14:38.597</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808270420000191</clOrdIDClientID>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <quoteType>1</quoteType>
+    <resType>1</resType>
+    <quoteID>201808270420000191</quoteID>
+    <transactTime>20180827-19:16:42.217</transactTime>
+    <securityID>010214</securityID>
+    <side>2</side>
+    <price>103.5600</price>
+    <qid>230016</qid>
+    <clOrdID>CBT20180827000101</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+  </body>
+</root>

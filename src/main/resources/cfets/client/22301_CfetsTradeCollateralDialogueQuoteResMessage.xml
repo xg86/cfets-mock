@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>2001</action>
+    <clientID>CFETS</clientID>
+    <serialNo>227361</serialNo>
+    <version>1.0.011</version>
+    <msgType>P</msgType>
+    <sendingTime>20180827-19:22:25.148</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808270920000097</clOrdIDClientID>
+    <quoteID>201808270920000097</quoteID>
+    <transactTime>20180827-19:24:30.081</transactTime>
+    <quoteTransType>C</quoteTransType>
+    <repoMethod>1</repoMethod>
+    <quoteType>1</quoteType>
+    <securityType>CR</securityType>
+    <marketIndicator>9</marketIndicator>
+    <collateralBondList/>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsdealer</traderID>
+    <counterPartyID>891012844010011610011</counterPartyID>
+    <counterTraderName>a079</counterTraderName>
+    <counterTraderID>htdealergsab</counterTraderID>
+    <qid>230024</qid>
+    <clOrdID>994002535396720009</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>a080</traderName>
+    <counterPartyName>广发基金公司工行广发主题投资资产管理计划9号</counterPartyName>
+  </body>
+</root>

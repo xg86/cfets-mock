@@ -1,0 +1,28 @@
+<root>
+  <header>
+    <action>4000</action>
+    <clientID>cfetszgl</clientID>
+    <serialNo>201808210000214588</serialNo>
+    <version>1</version>
+    <msgType>R</msgType>
+    <sendingTime>20180821-09:29:43.043</sendingTime>
+    <from>192.168.7.214</from>
+    <operator>sys</operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>212768</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228376</origClOrdID>
+    <quoteID>201808210410000034</quoteID>
+    <quoteTransType>C</quoteTransType>
+    <transactTime>20180821-09:31:41.589</transactTime>
+    <marketIndicator>4</marketIndicator>
+    <securityType>CBT</securityType>
+    <quoteType>112</quoteType>
+    <validUntilTime>20180821-09:57:39.039</validUntilTime>
+    <securityID>1080023</securityID>
+    <side>2</side>
+    <partyID>346234623462346234621</partyID>
+    <traderID>htcsapidealer</traderID>
+  </body>
+</root>

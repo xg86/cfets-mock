@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <header>
+    <action>3000</action>
+    <clientID>CFETS</clientID>
+    <serialNo>227376</serialNo>
+    <version>1.0.011</version>
+    <msgType>P</msgType>
+    <sendingTime>20180827-19:32:39.273</sendingTime>
+    <from></from>
+    <operator></operator>
+    <errorCode>0</errorCode>
+  </header>
+  <body>
+    <clOrdIDClientID>CFETS_201808270460000034</clOrdIDClientID>
+    <securityType>CBT</securityType>
+    <marketIndicator>4</marketIndicator>
+    <expireTime>20180827-21:10:00.000</expireTime>
+    <securityID>010214</securityID>
+    <side>1</side>
+    <maturityYield>4.6755</maturityYield>
+    <price>98.8000</price>
+    <deliveryType>0</deliveryType>
+    <clearingMethod>13</clearingMethod>
+    <settlType>2</settlType>
+    <splitIndicator>Y</splitIndicator>
+    <minTickSize>10000000</minTickSize>
+    <partyID>346234623462346234621</partyID>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>a080</traderName>
+    <traderID>htcsdealer</traderID>
+    <custodianInstitutionName>国债登记结算公司</custodianInstitutionName>
+    <custodianAcctNumber>0980980987</custodianAcctNumber>
+    <cashBankName>杭州衡泰测试</cashBankName>
+    <cashAcctNumber>98769876987607</cashAcctNumber>
+    <quoteTransType>N</quoteTransType>
+    <orderID>201808270460000034</orderID>
+    <transactTime>20180827-19:34:43.698</transactTime>
+    <quoteType>102</quoteType>
+    <qid>230044</qid>
+    <clOrdID>994002535396720015</clOrdID>
+    <status>5</status>
+    <errorCode>0</errorCode>
+  </body>
+</root>
