@@ -1,22 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>2000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>387</serialNo>
-    <version>1.0.008</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225886</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171228-11:03:13.656</sendingTime>
+    <sendingTime>20180821-08:46:40.373</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>636</clOrdIDClientID>
+    <clOrdIDClientID>212740</clOrdIDClientID>
     <origClOrdID></origClOrdID>
-    <quoteID>201712280420000087</quoteID>
-    <transactTime>20171228-11:03:17.938</transactTime>
+    <quoteID>201808210420000008</quoteID>
+    <transactTime>20180821-08:48:41.375</transactTime>
     <quoteTransType></quoteTransType>
     <orderQty></orderQty>
     <securityID></securityID>
@@ -37,12 +36,13 @@
     <cashAcctNumber></cashAcctNumber>
     <custodianAcctNumber></custodianAcctNumber>
     <counterPartyID>346234623462346234621</counterPartyID>
-    <counterTraderName>a080</counterTraderName>
-    <counterTraderID>htcsdealer</counterTraderID>
+    <counterTraderName>htcsapidealer</counterTraderName>
+    <counterTraderID>htcsapidealer</counterTraderID>
     <settlCurrency></settlCurrency>
     <settlCurrFxRate></settlCurrFxRate>
+    <portfolio></portfolio>
     <serialNo></serialNo>
-    <qid>844</qid>
+    <qid>228293</qid>
     <clOrdID></clOrdID>
     <status>12</status>
     <errorCode>0</errorCode>
@@ -53,7 +53,7 @@
     <accruedInterestTotalAmt></accruedInterestTotalAmt>
     <dirtyPrice></dirtyPrice>
     <tradeCashAmt></tradeCashAmt>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderName>a079</traderName>
     <custodianInstitutionName></custodianInstitutionName>
     <cashBankName></cashBankName>

@@ -2,51 +2,32 @@
 <root>
   <header>
     <action>3001</action>
-    <clientID>xIR2</clientID>
-    <serialNo>657</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>227395</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180103-15:09:58.851</sendingTime>
+    <sendingTime>20180827-19:52:10.739</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>931</clOrdIDClientID>
-    <origClOrdID></origClOrdID>
+    <clOrdIDClientID>213397</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
     <quoteType>105</quoteType>
-    <quoteTransType></quoteTransType>
-    <validUntilTime>20180103-15:10:00.000</validUntilTime>
+    <validUntilTime>20180827-19:54:15.015</validUntilTime>
     <anonymousIndicator>N</anonymousIndicator>
     <securityID>1080023</securityID>
     <side>1</side>
-    <maturityYield></maturityYield>
-    <strikeYield></strikeYield>
-    <price></price>
-    <orderQty></orderQty>
-    <maxFloor></maxFloor>
-    <minTickSize></minTickSize>
-    <settlCurrency></settlCurrency>
-    <settlCurrFxRate></settlCurrFxRate>
-    <deliveryType></deliveryType>
-    <clearingMethod></clearingMethod>
-    <settlType></settlType>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
-    <custodianInstitutionName></custodianInstitutionName>
-    <custodianAcctNumber></custodianAcctNumber>
-    <cashBankName></cashBankName>
-    <cashAcctNumber></cashAcctNumber>
-    <quoteID>201712280440000021</quoteID>
-    <transactTime>20180103-15:06:20.298</transactTime>
-    <serialNo></serialNo>
-    <qid>1382</qid>
-    <clOrdID></clOrdID>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>htcsapidealer</traderName>
+    <traderID>htcsapidealer</traderID>
+    <quoteID>201808270440000140</quoteID>
+    <transactTime>20180827-19:51:24.744</transactTime>
+    <qid>230087</qid>
     <status>9</status>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
   </body>
 </root>

@@ -34,7 +34,7 @@ import com.xquant.platform.component.mock.service.pledgebond.PledgeBondResMessag
  * 
  * @Package: com.xquant.platform.component.mock.init
  * @author: guanglai.zhou
- * @date: 2018-08-22 20:04:14
+ * @date: 2018-08-22 20:04:14 自动扫描数据库进行非终态报价的扫描（业务时间大于当前时间）构造过期消息
  */
 @Component
 public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager implements SmartLifecycle {
@@ -76,12 +76,10 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 
 	@SuppressWarnings("rawtypes")
 	private void addBondDlgResMessage(List<MockMessageInfo> messageInfoList) {
-		List<MockBondDialogueQuoteResMessageBody> queryUnFinalValidQuote = bondDlgResMessageService
-				.queryUnFinalValidQuote();
+		List<MockBondDialogueQuoteResMessageBody> queryUnFinalValidQuote = bondDlgResMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockBondDialogueQuoteResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}
@@ -92,12 +90,10 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 
 	@SuppressWarnings("rawtypes")
 	private void addClickDealMessage(List<MockMessageInfo> messageInfoList) {
-		List<MockBondClickDealQuoteResMessageBody> queryUnFinalValidQuote = bondClickDealMessageService
-				.queryUnFinalValidQuote();
+		List<MockBondClickDealQuoteResMessageBody> queryUnFinalValidQuote = bondClickDealMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockBondClickDealQuoteResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}
@@ -108,12 +104,10 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 
 	@SuppressWarnings("rawtypes")
 	private void addMarketMakerMessage(List<MockMessageInfo> messageInfoList) {
-		List<MockBondMarketMakingQuoteResMessageBody> queryUnFinalValidQuote = bondMarketMakeMessageService
-				.queryUnFinalValidQuote();
+		List<MockBondMarketMakingQuoteResMessageBody> queryUnFinalValidQuote = bondMarketMakeMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockBondMarketMakingQuoteResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}
@@ -124,12 +118,10 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 
 	@SuppressWarnings("rawtypes")
 	private void addPriceLimitMessage(List<MockMessageInfo> messageInfoList) {
-		List<MockBondPriceLimitQuoteResMessageBody> queryUnFinalValidQuote = bondPriceLimitMessageService
-				.queryUnFinalValidQuote();
+		List<MockBondPriceLimitQuoteResMessageBody> queryUnFinalValidQuote = bondPriceLimitMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockBondPriceLimitQuoteResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}
@@ -140,12 +132,10 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 
 	@SuppressWarnings("rawtypes")
 	private void addRFQReplyResMessage(List<MockMessageInfo> messageInfoList) {
-		List<MockBondRFQReplyResMessageBody> queryUnFinalValidQuote = bondRFQReplyResMessageService
-				.queryUnFinalValidQuote();
+		List<MockBondRFQReplyResMessageBody> queryUnFinalValidQuote = bondRFQReplyResMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockBondRFQReplyResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}
@@ -159,8 +149,7 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 		List<MockBondRFQResMessageBody> queryUnFinalValidQuote = bondRFQResMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockBondRFQResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}
@@ -171,12 +160,10 @@ public class UnFinalQuoteExpiredMessageLoader extends MessageMockManager impleme
 
 	@SuppressWarnings("rawtypes")
 	private void addPledgeBondResMessage(List<MockMessageInfo> messageInfoList) {
-		List<MockCollateralDialogueQuoteResMessageBody> queryUnFinalValidQuote = PledgeBondResMessageService
-				.queryUnFinalValidQuote();
+		List<MockCollateralDialogueQuoteResMessageBody> queryUnFinalValidQuote = PledgeBondResMessageService.queryUnFinalValidQuote();
 		if (CollectionUtils.isNotEmpty(queryUnFinalValidQuote)) {
 			for (MockCollateralDialogueQuoteResMessageBody mockBondDialogueQuoteResMessageBody : queryUnFinalValidQuote) {
-				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired
-						.build(mockBondDialogueQuoteResMessageBody);
+				MockMessageInfo buildMessageInfo = messageInfoBuilderManager4Expired.build(mockBondDialogueQuoteResMessageBody);
 				messageInfoList.add(buildMessageInfo);
 			}
 		}

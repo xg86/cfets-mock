@@ -1,49 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4001</action>
-    <clientID>xIR2</clientID>
-    <serialNo>606</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225998</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-14:43:09.155</sendingTime>
+    <sendingTime>20180821-10:10:43.095</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>910</clOrdIDClientID>
-    <origClOrdID>ODhzhttrd000001282</origClOrdID>
+    <clOrdIDClientID>212795</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228489</origClOrdID>
     <quoteReqID></quoteReqID>
-    <quoteID>201712290420000112</quoteID>
+    <quoteID>201808210420000107</quoteID>
     <quoteTransType>C</quoteTransType>
-    <transactTime>20171229-14:43:15.469</transactTime>
+    <transactTime>20180821-10:12:43.772</transactTime>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
     <quoteType>113</quoteType>
-    <validUntilTime>20171229-15:10:00.000</validUntilTime>
+    <validUntilTime>20180821-10:42:00.000</validUntilTime>
     <securityID>010214</securityID>
     <side>2</side>
     <maturityYield></maturityYield>
     <strikeYield></strikeYield>
     <price></price>
     <orderQty></orderQty>
-    <settlCurrency></settlCurrency>
+    <settlCurrency>CNY</settlCurrency>
     <settlCurrFxRate></settlCurrFxRate>
     <deliveryType></deliveryType>
     <clearingMethod></clearingMethod>
     <settlType></settlType>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <partyName></partyName>
+    <traderName></traderName>
+    <traderID>htcsapidealer</traderID>
     <custodianAcctNumber></custodianAcctNumber>
     <cashAcctNumber></cashAcctNumber>
     <counterPartyID>891012844010011610011</counterPartyID>
+    <counterPartyName></counterPartyName>
     <counterTraderID>htdealergsab</counterTraderID>
+    <counterTraderName></counterTraderName>
+    <portfolio></portfolio>
     <quoteRequestRejectType></quoteRequestRejectType>
-    <serialNo>201712290000001473</serialNo>
-    <qid>1286</qid>
-    <clOrdID>ODhzhttrd000001285</clOrdID>
+    <serialNo>201808210000214618</serialNo>
+    <qid>228492</qid>
+    <clOrdID>ODhzhttrd000228491</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

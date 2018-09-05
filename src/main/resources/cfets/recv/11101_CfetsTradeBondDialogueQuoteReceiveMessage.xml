@@ -2,49 +2,49 @@
   <header>
     <action>2004</action>
     <clientID>CFETS</clientID>
-    <serialNo>1102</serialNo>
-    <version>1.0.009</version>
+    <serialNo>225879</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180510-11:45:45.817</sendingTime>
+    <sendingTime>20180821-08:44:52.442</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>2462</qid>
-    <quoteID>201805090420000141</quoteID>
-    <transactTime>20180510-11:46:37.746</transactTime>
+    <qid>228283</qid>
+    <quoteID>201808210420000003</quoteID>
+    <transactTime>20180821-08:46:53.266</transactTime>
     <status>5</status>
     <clientID>CFETS</clientID>
-    <clOrdIDClientID>CFETS_201805100420000059</clOrdIDClientID>
+    <clOrdIDClientID>CFETS_201808210420000003</clOrdIDClientID>
     <origCfetsStatus>16</origCfetsStatus>
     <quoteTransType>N</quoteTransType>
     <isQuoteResponse>false</isQuoteResponse>
-    <orderQty>1000000</orderQty>
-    <price>99.0000</price>
-    <securityID>010011</securityID>
-    <settlDate>20180511</settlDate>
+    <orderQty>12000000</orderQty>
+    <price>103.5000</price>
+    <securityID>010214</securityID>
+    <settlDate>20180822</settlDate>
     <side>1</side>
     <text></text>
-    <validUntilTime>20180510-21:40:00.000</validUntilTime>
+    <validUntilTime>20180821-21:10:00.000</validUntilTime>
     <settlType>2</settlType>
-    <settlCurrAmt>991893.44</settlCurrAmt>
-    <accruedInterestAmt>0.18934</accruedInterestAmt>
+    <settlCurrAmt>12593600.00</settlCurrAmt>
+    <accruedInterestAmt>1.44667</accruedInterestAmt>
     <quoteType>1</quoteType>
-    <accruedInterestTotalAmt>1893.44</accruedInterestTotalAmt>
-    <dirtyPrice>99.1893</dirtyPrice>
+    <accruedInterestTotalAmt>173600.00</accruedInterestTotalAmt>
+    <dirtyPrice>104.9467</dirtyPrice>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
-    <tradeCashAmt>990000.00</tradeCashAmt>
+    <tradeCashAmt>12420000.00</tradeCashAmt>
     <deliveryType>0</deliveryType>
     <clearingMethod>13</clearingMethod>
     <principal></principal>
     <totalPrincipal></totalPrincipal>
-    <maturityYield>4.1636</maturityYield>
+    <maturityYield>3.0907</maturityYield>
     <strikeYield></strikeYield>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderID>htdealergsab</traderID>
     <traderName>a079</traderName>
     <counterPartyID>346234623462346234621</counterPartyID>
@@ -56,7 +56,7 @@
     <clOrdID></clOrdID>
     <quoteTime></quoteTime>
     <negotiationCount>0</negotiationCount>
-    <symbol>01国债11</symbol>
-    <updateTime>20180510-11:45:45.777</updateTime>
+    <symbol>01国开14</symbol>
+    <updateTime>20180821-08:44:52.164</updateTime>
   </body>
 </root>

@@ -15,7 +15,7 @@
   <body>
     <clOrdIDClientID>622</clOrdIDClientID>
     <origClOrdID></origClOrdID>
-    <quoteID>201712260920000029</quoteID>
+    <quoteID>201712270920000142</quoteID>
     <transactTime>20171227-16:46:16.686</transactTime>
     <quoteTransType></quoteTransType>
     <price>55.0000</price>
@@ -44,7 +44,7 @@
     <traderID>htcsdealer</traderID>
     <cashAcctNumber>98769876987607</cashAcctNumber>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
-    <counterPartyID>891012844010011610011</counterPartyID>
+    <counterPartyID>888888888888888888888</counterPartyID>
     <counterTraderName>a079</counterTraderName>
     <counterTraderID>htdealergsab</counterTraderID>
     <settlCurrency>CNY</settlCurrency>

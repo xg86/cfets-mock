@@ -37,6 +37,10 @@ public class MockGenerateUtil {
 	public synchronized static String getNextOperateSeqNum() {
 		return "XT" + date_format.format(new Date()) + MockPropertiesUtil.getValueAndThenIncrease("operateSeqNum");
 	}
+	
+	public synchronized static String getNextExecId() {
+		return date_format.format(new Date()) + MockPropertiesUtil.getValueAndThenIncrease("execID");
+	}
 
 	public static void main(String[] args) {
 		System.out.println(MockGenerateUtil.getNextSerialNoByDate());

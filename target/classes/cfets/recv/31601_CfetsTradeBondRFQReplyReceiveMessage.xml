@@ -1,25 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4005</action>
-    <clientID>CFETS</clientID>
-    <serialNo>553</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225961</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-11:10:29.379</sendingTime>
+    <sendingTime>20180821-09:54:58.928</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>1184</qid>
-    <quoteID>201712290420000061</quoteID>
-    <transactTime>20171229-11:10:35.417</transactTime>
+    <qid>228428</qid>
+    <quoteID>201808210420000068</quoteID>
+    <transactTime>20180821-09:56:59.700</transactTime>
     <status>7</status>
-    <clientID>xIR2</clientID>
-    <clOrdIDClientID>CFETS_201712290420000053</clOrdIDClientID>
-    <quoteTransType></quoteTransType>
+    <clientID>cfetszgl</clientID>
+    <clOrdIDClientID>CFETS_201808210420000068</clOrdIDClientID>
+    <quoteTransType>C</quoteTransType>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
     <quoteReqID></quoteReqID>
@@ -54,7 +53,9 @@
     <custodianAcctNumber></custodianAcctNumber>
     <cashAcctNumber></cashAcctNumber>
     <counterPartyID></counterPartyID>
+    <counterPartyName></counterPartyName>
     <counterTraderID></counterTraderID>
-    <updateTime>20171229-11:10:29.268</updateTime>
+    <counterTraderName></counterTraderName>
+    <updateTime>20180821-09:54:58.904</updateTime>
   </body>
 </root>

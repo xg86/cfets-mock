@@ -28,19 +28,19 @@
 		<dependency>
 			<groupId>com.xquant.platform.pptp.stub</groupId>
 			<artifactId>xquant-platform-pptp-stub</artifactId>
-			<version>1.137.1.1.STUB</version>
+			<version>1.139.1.1.STUB</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component</groupId>
 			<artifactId>xquant-platform-component-common</artifactId>
-			<version>1.2.7.7</version>
+			<version>1.2.7.12</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component</groupId>
 			<artifactId>xquant-platform-component</artifactId>
-			<version>1.2.7.7</version>
+			<version>1.2.7.12</version>
 		</dependency>
 
 		<!-- <dependency> <groupId>com.xquant.platform.component.web</groupId> <artifactId>xquant-platform-component-web-cfets</artifactId> 
@@ -51,7 +51,7 @@
 		<dependency>
 			<groupId>com.xquant.cfets.xtrade</groupId>
 			<artifactId>X-Swap-Protocol</artifactId>
-			<version>1.0.5</version>
+			<version>1.0.6</version>
 			<exclusions>
 				<exclusion>
 					<groupId>log4j</groupId>
@@ -74,26 +74,26 @@
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets</artifactId>
-			<version>1.1.6.1</version>
+			<version>1.1.7.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets-transport</artifactId>
-			<version>1.1.6.1</version>
+			<version>1.1.7.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets-common</artifactId>
-			<!-- <version>1.1.6.1</version> -->
-			<version>0.0.1-SNAPSHOT</version>
+			<!-- <version>1.1.7.0</version> -->
+			<version>1.1.7.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets-xswap</artifactId>
-			<version>1.1.6.1</version>
+			<version>1.1.7.0</version>
 		</dependency>
 
 		<!--mysql driver 由项目点自行决定 -->

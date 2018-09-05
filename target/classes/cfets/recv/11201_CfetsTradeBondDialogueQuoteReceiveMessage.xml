@@ -2,61 +2,61 @@
   <header>
     <action>2004</action>
     <clientID>CFETS</clientID>
-    <serialNo>1075</serialNo>
-    <version>1.0.009</version>
+    <serialNo>225880</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180509-19:24:47.572</sendingTime>
+    <sendingTime>20180821-08:45:06.999</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>2401</qid>
-    <quoteID>201805090420000141</quoteID>
-    <transactTime>20180509-19:25:40.446</transactTime>
+    <qid>228284</qid>
+    <quoteID>201808210420000003</quoteID>
+    <transactTime>20180821-08:47:07.850</transactTime>
     <status>5</status>
-    <clientID>xIR3</clientID>
-    <clOrdIDClientID>12791</clOrdIDClientID>
+    <clientID>CFETS</clientID>
+    <clOrdIDClientID>CFETS_201808210420000003</clOrdIDClientID>
     <origCfetsStatus>16</origCfetsStatus>
     <quoteTransType>R</quoteTransType>
-    <isQuoteResponse>true</isQuoteResponse>
-    <orderQty>10000000</orderQty>
-    <price>88.8000</price>
-    <securityID>1080023</securityID>
-    <settlDate>20180510</settlDate>
-    <side>2</side>
+    <isQuoteResponse>false</isQuoteResponse>
+    <orderQty>12000000</orderQty>
+    <price>100.5000</price>
+    <securityID>010214</securityID>
+    <settlDate>20180822</settlDate>
+    <side>1</side>
     <text></text>
-    <validUntilTime>20180509-19:30:00.000</validUntilTime>
+    <validUntilTime>20180821-21:10:00.000</validUntilTime>
     <settlType>2</settlType>
-    <settlCurrAmt>9003616.44</settlCurrAmt>
-    <accruedInterestAmt>1.23616</accruedInterestAmt>
+    <settlCurrAmt>12233600.00</settlCurrAmt>
+    <accruedInterestAmt>1.44667</accruedInterestAmt>
     <quoteType>1</quoteType>
-    <accruedInterestTotalAmt>123616.44</accruedInterestTotalAmt>
-    <dirtyPrice>90.0362</dirtyPrice>
+    <accruedInterestTotalAmt>173600.00</accruedInterestTotalAmt>
+    <dirtyPrice>101.9467</dirtyPrice>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
-    <tradeCashAmt>8880000.00</tradeCashAmt>
+    <tradeCashAmt>12060000.00</tradeCashAmt>
     <deliveryType>0</deliveryType>
     <clearingMethod>13</clearingMethod>
     <principal></principal>
     <totalPrincipal></totalPrincipal>
-    <maturityYield>6.9294</maturityYield>
+    <maturityYield>4.0907</maturityYield>
     <strikeYield></strikeYield>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
-    <traderID>htjjdealerdwjj</traderID>
-    <traderName>东吴基金对手方</traderName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
+    <traderID>htdealergsab</traderID>
+    <traderName>a079</traderName>
     <counterPartyID>346234623462346234621</counterPartyID>
     <counterPartyName>杭州衡泰测试</counterPartyName>
-    <counterTraderID>htcsapidealer</counterTraderID>
-    <counterTraderName>htcsapidealer</counterTraderName>
+    <counterTraderID>htcsdealer</counterTraderID>
+    <counterTraderName>a080</counterTraderName>
     <settlCurrency>CNY</settlCurrency>
     <settlCurrFxRate>0.0</settlCurrFxRate>
     <clOrdID></clOrdID>
     <quoteTime></quoteTime>
     <negotiationCount>0</negotiationCount>
-    <symbol></symbol>
-    <updateTime>20180509-19:24:47.539</updateTime>
+    <symbol>01国开14</symbol>
+    <updateTime>20180821-08:45:06.759</updateTime>
   </body>
 </root>

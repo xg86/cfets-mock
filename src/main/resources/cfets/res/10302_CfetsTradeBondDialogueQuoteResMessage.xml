@@ -1,28 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>2000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>383</serialNo>
-    <version>1.0.008</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225878</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171228-10:57:46.680</sendingTime>
+    <sendingTime>20180821-08:34:03.861</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>634</clOrdIDClientID>
-    <origClOrdID>ODhzhttrd000000833</origClOrdID>
-    <quoteID>201712280420000087</quoteID>
-    <transactTime>20171228-10:57:51.359</transactTime>
+    <clOrdIDClientID>212736</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228278</origClOrdID>
+    <quoteID>201808210420000001</quoteID>
+    <transactTime>20180821-08:36:04.661</transactTime>
     <quoteTransType>C</quoteTransType>
     <orderQty></orderQty>
     <securityID>1080023</securityID>
-    <side>1</side>
+    <side>2</side>
     <text></text>
-    <validUntilTime>20171228-19:30:00.000</validUntilTime>
+    <validUntilTime>20180821-09:01:35.035</validUntilTime>
     <settlType></settlType>
     <quoteType>1</quoteType>
     <securityType>CBT</securityType>
@@ -33,17 +32,18 @@
     <maturityYield></maturityYield>
     <strikeYield></strikeYield>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <traderID>htcsapidealer</traderID>
     <cashAcctNumber>98769876987607</cashAcctNumber>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
     <counterPartyID>891012844010011610011</counterPartyID>
     <counterTraderName>a079</counterTraderName>
     <counterTraderID>htdealergsab</counterTraderID>
-    <settlCurrency></settlCurrency>
+    <settlCurrency>CNY</settlCurrency>
     <settlCurrFxRate></settlCurrFxRate>
-    <serialNo>201712280000001205</serialNo>
-    <qid>836</qid>
-    <clOrdID>ODhzhttrd000000835</clOrdID>
+    <portfolio></portfolio>
+    <serialNo>201808210000214559</serialNo>
+    <qid>228281</qid>
+    <clOrdID>ODhzhttrd000228280</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

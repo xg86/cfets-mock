@@ -2,22 +2,22 @@
   <header>
     <action>2005</action>
     <clientID>CFETS</clientID>
-    <serialNo>1208</serialNo>
-    <version>1.0.009</version>
+    <serialNo>225910</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180510-18:30:51.109</sendingTime>
+    <sendingTime>20180821-09:02:06.248</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>2734</qid>
-    <quoteID>201805100920000148</quoteID>
-    <transactTime>20180510-18:31:44.193</transactTime>
+    <qid>228333</qid>
+    <quoteID>201808210920000004</quoteID>
+    <transactTime>20180821-09:04:07.273</transactTime>
     <status>7</status>
     <clientID>CFETS</clientID>
-    <clOrdIDClientID>CFETS_201805100920000148</clOrdIDClientID>
+    <clOrdIDClientID>CFETS_201808210920000004</clOrdIDClientID>
     <origCfetsStatus>19</origCfetsStatus>
     <quoteTransType>C</quoteTransType>
     <isQuoteResponse>false</isQuoteResponse>
@@ -45,7 +45,7 @@
     <settlCurrency></settlCurrency>
     <collateralBondList/>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderID>htdealergsab</traderID>
     <traderName>a079</traderName>
     <counterPartyID>346234623462346234621</counterPartyID>
@@ -53,6 +53,6 @@
     <counterTraderID>htcsdealer</counterTraderID>
     <counterTraderName>a080</counterTraderName>
     <negotiationCount>0</negotiationCount>
-    <updateTime>20180510-18:30:51.041</updateTime>
+    <updateTime>20180821-09:02:06.175</updateTime>
   </body>
 </root>

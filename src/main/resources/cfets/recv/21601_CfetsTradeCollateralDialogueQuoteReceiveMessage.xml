@@ -1,66 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>2005</action>
-    <clientID>CFETS</clientID>
-    <serialNo>644</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225922</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-16:34:03.253</sendingTime>
+    <sendingTime>20180821-09:10:54.702</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>1353</qid>
-    <quoteID>201712260920000029</quoteID>
-    <transactTime>20171229-16:34:09.128</transactTime>
+    <qid>228353</qid>
+    <quoteID>201808210920000009</quoteID>
+    <transactTime>20180821-09:12:55.358</transactTime>
     <status>5</status>
-    <clientID>xIR2</clientID>
-    <clOrdIDClientID>921</clOrdIDClientID>
+    <clientID>cfetszgl</clientID>
+    <clOrdIDClientID>212758</clOrdIDClientID>
     <origCfetsStatus></origCfetsStatus>
-    <quoteTransType></quoteTransType>
+    <quoteTransType>R</quoteTransType>
     <isQuoteResponse>true</isQuoteResponse>
     <clOrdID></clOrdID>
     <securityType>CR</securityType>
     <marketIndicator>9</marketIndicator>
     <quoteType>1</quoteType>
-    <validUntilTime>20171229-16:35:00.000</validUntilTime>
+    <validUntilTime>20180821-09:38:00.000</validUntilTime>
     <side>2</side>
     <repoMethod></repoMethod>
-    <tradeLimitDays>21</tradeLimitDays>
-    <tradeCashAmt>980000.00</tradeCashAmt>
+    <tradeLimitDays>22</tradeLimitDays>
+    <tradeCashAmt>22260000.00</tradeCashAmt>
     <text></text>
-    <settlType>1</settlType>
-    <price>45.0000</price>
+    <settlType>2</settlType>
+    <price>4.5000</price>
     <deliveryType>0</deliveryType>
     <deliveryType2>0</deliveryType2>
     <clearingMethod>13</clearingMethod>
-    <accruedInterestAmt></accruedInterestAmt>
-    <settlDate>20171229</settlDate>
-    <settlDate2>20180119</settlDate2>
-    <cashHoldingDays>21</cashHoldingDays>
-    <settlCurrAmt2>1005372.60</settlCurrAmt2>
-    <securityID>R021</securityID>
+    <accruedInterestAmt>60376.43836</accruedInterestAmt>
+    <settlDate>20180822</settlDate>
+    <settlDate2>20180913</settlDate2>
+    <cashHoldingDays>22</cashHoldingDays>
+    <settlCurrAmt2>22320376.44</settlCurrAmt2>
+    <securityID>R1M</securityID>
     <settlCurrency>CNY</settlCurrency>
     <collateralBondList>
       <collateralBond>
         <underlyingSymbol>02国债05</underlyingSymbol>
         <underlyingSecurityID>020005</underlyingSecurityID>
-        <underlyingQty>1000000</underlyingQty>
-        <underlyingStipValue>98.0000</underlyingStipValue>
+        <underlyingQty>12000000</underlyingQty>
+        <underlyingStipValue>98.00</underlyingStipValue>
+      </collateralBond>
+      <collateralBond>
+        <underlyingSymbol>01国开14</underlyingSymbol>
+        <underlyingSecurityID>010214</underlyingSecurityID>
+        <underlyingQty>30000000</underlyingQty>
+        <underlyingStipValue>35.00</underlyingStipValue>
       </collateralBond>
     </collateralBondList>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderID>htdealergsab</traderID>
     <traderName>a079</traderName>
     <counterPartyID>346234623462346234621</counterPartyID>
     <counterPartyName>杭州衡泰测试</counterPartyName>
-    <counterTraderID>htcsdealer</counterTraderID>
-    <counterTraderName>a080</counterTraderName>
+    <counterTraderID>htcsapidealer</counterTraderID>
+    <counterTraderName>htcsapidealer</counterTraderName>
     <negotiationCount>0</negotiationCount>
-    <updateTime>20171229-16:34:02.665</updateTime>
+    <updateTime>20180821-09:10:54.345</updateTime>
   </body>
 </root>

@@ -1,28 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>2001</action>
-    <clientID>xIR2</clientID>
-    <serialNo>252</serialNo>
-    <version>1.0.008</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225904</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171226-11:50:56.872</sendingTime>
+    <sendingTime>20180821-08:58:47.107</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>587</clOrdIDClientID>
-    <origClOrdID>ODhzhttrd000000584</origClOrdID>
-    <quoteID>201712260920000029</quoteID>
-    <transactTime>20171226-11:50:58.892</transactTime>
+    <clOrdIDClientID>212749</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228322</origClOrdID>
+    <quoteID>201808210920000002</quoteID>
+    <transactTime>20180821-09:00:48.025</transactTime>
     <quoteTransType>C</quoteTransType>
     <price></price>
-    <side>1</side>
+    <side>2</side>
     <repoMethod></repoMethod>
     <text></text>
-    <validUntilTime>20171226-19:30:00.000</validUntilTime>
+    <validUntilTime>20180821-09:26:36.036</validUntilTime>
     <settlType></settlType>
     <tradeLimitDays></tradeLimitDays>
     <quoteType>1</quoteType>
@@ -34,19 +33,21 @@
     <tradeCashAmt></tradeCashAmt>
     <collateralBondList/>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <traderID>htcsapidealer</traderID>
     <cashAcctNumber></cashAcctNumber>
     <custodianAcctNumber></custodianAcctNumber>
     <counterPartyID>891012844010011610011</counterPartyID>
     <counterTraderName>a079</counterTraderName>
     <counterTraderID>htdealergsab</counterTraderID>
     <settlCurrency></settlCurrency>
-    <serialNo>201712260000001047</serialNo>
-    <qid>587</qid>
-    <clOrdID>ODhzhttrd000000586</clOrdID>
+    <portfolio></portfolio>
+    <serialNo>201808210000214571</serialNo>
+    <qid>228325</qid>
+    <clOrdID>ODhzhttrd000228324</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
+    <securityID></securityID>
     <cashHoldingDays>0</cashHoldingDays>
     <accruedInterestAmt></accruedInterestAmt>
     <settlCurramt2></settlCurramt2>

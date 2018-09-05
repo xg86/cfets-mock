@@ -1,34 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>2003</action>
-    <clientID>xIR2</clientID>
-    <serialNo>335</serialNo>
-    <version>1.0.008</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225917</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171227-14:33:38.426</sendingTime>
+    <sendingTime>20180821-09:05:01.813</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>CFETS_201712270920000091</clOrdIDClientID>
+    <clOrdIDClientID>CFETS_201808210920000007</clOrdIDClientID>
     <securityType>CR</securityType>
     <marketIndicator>9</marketIndicator>
     <quoteType>1</quoteType>
     <resType>1</resType>
-    <validUntilTime>20171227-19:20:00.000</validUntilTime>
-    <quoteID>201805100920000148</quoteID>
-    <transactTime>20171227-14:31:02.327</transactTime>
-    <side>1</side>
+    <validUntilTime>20180821-21:10:00.000</validUntilTime>
+    <quoteID>201808210920000007</quoteID>
+    <transactTime>20180821-09:07:02.658</transactTime>
+    <side>2</side>
     <repoMethod>1</repoMethod>
-    <securityID>R014</securityID>
-    <tradeLimitDays>12</tradeLimitDays>
-    <cashHoldingDays>12</cashHoldingDays>
-    <price>4.0000</price>
-    <tradeCashAmt>1764000.00</tradeCashAmt>
-    <settlCurrAmt2>1766319.78</settlCurrAmt2>
+    <securityID>R021</securityID>
+    <tradeLimitDays>15</tradeLimitDays>
+    <cashHoldingDays>15</cashHoldingDays>
+    <price>5.0000</price>
+    <tradeCashAmt>12000000.00</tradeCashAmt>
+    <settlCurrAmt2>12024657.53</settlCurrAmt2>
     <settlType>2</settlType>
     <deliveryType>0</deliveryType>
     <deliveryType2>0</deliveryType2>
@@ -37,14 +36,19 @@
     <text></text>
     <collateralBondList/>
     <partyID>346234623462346234621</partyID>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>a080</traderName>
     <traderID>htcsdealer</traderID>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
     <cashAcctNumber>98769876987607</cashAcctNumber>
     <counterPartyID>891012844010011610011</counterPartyID>
+    <counterPartyName>广发基金公司工行广发主题投资资产管理计划9号</counterPartyName>
     <counterTraderID>htdealergsab</counterTraderID>
-    <serialNo>201712270000001130</serialNo>
-    <qid>721</qid>
-    <clOrdID>ODhzhttrd000000720</clOrdID>
+    <counterTraderName>a079</counterTraderName>
+    <portfolio></portfolio>
+    <serialNo>201808210000214574</serialNo>
+    <qid>228345</qid>
+    <clOrdID>ODhzhttrd000228344</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

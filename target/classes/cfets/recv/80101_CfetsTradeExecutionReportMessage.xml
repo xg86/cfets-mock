@@ -1,39 +1,39 @@
 <root>
   <header>
     <action>9000</action>
-    <clientID>xIR3</clientID>
-    <serialNo>14003</serialNo>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225884</serialNo>
     <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180606-11:56:14.638</sendingTime>
+    <sendingTime>20180821-08:46:29.815</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>15737</qid>
-    <clientID>xIR3</clientID>
-    <clOrdIDClientID>1105310</clOrdIDClientID>
+    <qid>228288</qid>
+    <clientID>cfetszgl</clientID>
+    <clOrdIDClientID>212739</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
-    <execID>CBT20180606000082</execID>
-    <tradeMethod>4</tradeMethod>
-    <tradeType>2</tradeType>
+    <execID>CBT20180821000003</execID>
+    <tradeMethod>1</tradeMethod>
+    <tradeType>1</tradeType>
     <quoteType>0</quoteType>
     <execType>F</execType>
-    <tradeDate>20180606</tradeDate>
-    <tradeTime>11:57:22.346</tradeTime>
-    <quoteID>201806060420000168</quoteID>
+    <tradeDate>20180821</tradeDate>
+    <tradeTime>08:48:29.888</tradeTime>
+    <quoteID>201808210420000007</quoteID>
     <orderID></orderID>
-    <transactTime>20180606-11:57:22.346</transactTime>
-    <lastQty>50000000</lastQty>
+    <transactTime>20180821-08:48:29.888</transactTime>
+    <lastQty>10000000</lastQty>
     <leavesQty></leavesQty>
-    <grossTradeAmt>50000000.00</grossTradeAmt>
+    <grossTradeAmt>9990000.00</grossTradeAmt>
     <side>2</side>
-    <updateTime>20180606-11:56:14.418</updateTime>
-    <price>100.0000</price>
-    <dirtyPrice>100.5600</dirtyPrice>
-    <securityID>010214</securityID>
+    <updateTime>20180821-08:46:29.669</updateTime>
+    <price>99.9000</price>
+    <dirtyPrice>102.5038</dirtyPrice>
+    <securityID>1080023</securityID>
   </body>
 </root>

@@ -12,7 +12,7 @@
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>680</clOrdIDClientID>
+    <clOrdIDClientID>1105289</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
     <quoteType>107</quoteType>
@@ -61,7 +61,7 @@
     <portfolio></portfolio>
     <quoteTransType></quoteTransType>
     <origClOrdID></origClOrdID>
-    <quoteID>201712280440000023</quoteID>
+    <quoteID>201806060440000006</quoteID>
     <transactTime>20180606-08:46:31.493</transactTime>
     <serialNo></serialNo>
     <qid>15645</qid>

@@ -15,7 +15,7 @@
   <body>
     <clOrdIDClientID>623</clOrdIDClientID>
     <origClOrdID></origClOrdID>
-    <quoteID>201712260920000029</quoteID>
+    <quoteID>201712270920000143</quoteID>
     <transactTime>20171227-16:52:48.001</transactTime>
     <quoteTransType></quoteTransType>
     <price></price>
@@ -33,7 +33,7 @@
     <deliveryType2></deliveryType2>
     <tradeCashAmt></tradeCashAmt>
     <collateralBondList/>
-    <partyID>891012844010011610011</partyID>
+    <partyID>888888888888888888888</partyID>
     <traderID>htdealergsab</traderID>
     <cashAcctNumber></cashAcctNumber>
     <custodianAcctNumber></custodianAcctNumber>

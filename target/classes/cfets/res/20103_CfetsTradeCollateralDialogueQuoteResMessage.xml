@@ -2,62 +2,34 @@
 <root>
   <header>
     <action>2001</action>
-    <clientID>xIR2</clientID>
-    <serialNo>640</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>227394</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-16:25:53.909</sendingTime>
+    <sendingTime>20180827-19:52:07.574</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>919</clOrdIDClientID>
-    <origClOrdID></origClOrdID>
-    <quoteID>201712260920000029</quoteID>
-    <transactTime>20171229-16:26:00.322</transactTime>
-    <quoteTransType></quoteTransType>
-    <price></price>
-    <side></side>
+    <clOrdIDClientID>213394</clOrdIDClientID>
+    <quoteID>201808270920000100</quoteID>
+    <transactTime>20180827-19:54:12.698</transactTime>
     <repoMethod>1</repoMethod>
-    <text></text>
-    <validUntilTime></validUntilTime>
-    <settlType></settlType>
-    <tradeLimitDays></tradeLimitDays>
     <quoteType>1</quoteType>
     <securityType>CR</securityType>
     <marketIndicator>9</marketIndicator>
-    <deliveryType></deliveryType>
-    <clearingMethod></clearingMethod>
-    <deliveryType2></deliveryType2>
-    <tradeCashAmt></tradeCashAmt>
     <collateralBondList/>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
-    <cashAcctNumber></cashAcctNumber>
-    <custodianAcctNumber></custodianAcctNumber>
+    <traderID>htcsapidealer</traderID>
     <counterPartyID>891012844010011610011</counterPartyID>
     <counterTraderName>a079</counterTraderName>
     <counterTraderID>htdealergsab</counterTraderID>
-    <settlCurrency></settlCurrency>
-    <serialNo></serialNo>
-    <qid>1346</qid>
-    <clOrdID></clOrdID>
+    <qid>230086</qid>
     <status>9</status>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
-    <cashHoldingDays>0</cashHoldingDays>
-    <accruedInterestAmt></accruedInterestAmt>
-    <settlCurramt2></settlCurramt2>
-    <settlDate></settlDate>
-    <settlDate2></settlDate2>
     <partyName>杭州衡泰测试</partyName>
-    <traderName>a080</traderName>
-    <custodianInstitutionName></custodianInstitutionName>
-    <cashBankName></cashBankName>
-    <counterPartyName>恒天基金</counterPartyName>
-    <queryRequestID></queryRequestID>
-    <negotiationCount>0</negotiationCount>
+    <traderName>htcsapidealer</traderName>
+    <counterPartyName>广发基金公司工行广发主题投资资产管理计划9号</counterPartyName>
   </body>
 </root>

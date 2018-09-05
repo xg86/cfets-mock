@@ -1,49 +1,48 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4004</action>
     <clientID>CFETS</clientID>
-    <serialNo>588</serialNo>
-    <version>1.0.006</version>
+    <serialNo>225965</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-14:09:34.433</sendingTime>
+    <sendingTime>20180821-09:59:02.420</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>1250</qid>
-    <quoteID>201712290410000098</quoteID>
-    <transactTime>20171229-14:09:40.377</transactTime>
+    <qid>228434</qid>
+    <quoteID>201808210410000078</quoteID>
+    <transactTime>20180821-10:01:02.995</transactTime>
     <status>5</status>
     <clientID>CFETS</clientID>
-    <clOrdIDClientID>CFETS_201712290410000098</clOrdIDClientID>
+    <clOrdIDClientID>CFETS_201808210410000078</clOrdIDClientID>
     <origClOrdID></origClOrdID>
-    <quoteTransType></quoteTransType>
+    <quoteTransType>N</quoteTransType>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
     <quoteType>112</quoteType>
-    <validUntilTime>20171229-14:39:00.000</validUntilTime>
+    <validUntilTime>20180821-10:31:00.000</validUntilTime>
     <securityID>010214</securityID>
     <symbol>01国开14</symbol>
     <side>1</side>
     <orderQty>50000000</orderQty>
-    <accruedInterestAmt>0.85167</accruedInterestAmt>
-    <accruedInterestTotalAmt>425833.33</accruedInterestTotalAmt>
-    <settlDate>20180101</settlDate>
+    <accruedInterestAmt>1.44667</accruedInterestAmt>
+    <accruedInterestTotalAmt>723333.33</accruedInterestTotalAmt>
+    <settlDate>20180822</settlDate>
     <principal></principal>
     <totalPrincipal></totalPrincipal>
     <deliveryType>0</deliveryType>
     <clearingMethod>13</clearingMethod>
     <settlType>2</settlType>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderID>htdealergsab</traderID>
     <traderName>a079</traderName>
     <custodianAcctNumber></custodianAcctNumber>
     <cashAcctNumber></cashAcctNumber>
     <counterPartyID></counterPartyID>
-    <updateTime>20171229-14:09:34.348</updateTime>
+    <updateTime>20180821-09:59:02.347</updateTime>
   </body>
 </root>

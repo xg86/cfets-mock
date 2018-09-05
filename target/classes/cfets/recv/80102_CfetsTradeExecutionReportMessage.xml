@@ -1,39 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>9000</action>
-    <clientID>xIR3</clientID>
-    <serialNo>13889</serialNo>
+    <clientID>CFETS</clientID>
+    <serialNo>227355</serialNo>
     <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180605-19:15:16.230</sendingTime>
+    <sendingTime>20180827-19:14:38.632</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>15426</qid>
-    <clientID>xIR3</clientID>
-    <clOrdIDClientID>1105260</clOrdIDClientID>
+    <qid>230012</qid>
+    <clientID>CFETS</clientID>
+    <clOrdIDClientID>CFETS_201808270420000191</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
-    <execID>CBT20180605000223</execID>
+    <execID>CBT20180827000101</execID>
     <tradeMethod>1</tradeMethod>
     <tradeType>1</tradeType>
-    <quoteType>0</quoteType>
     <execType>F</execType>
-    <tradeDate>20180605</tradeDate>
-    <tradeTime>19:16:24.415</tradeTime>
-    <quoteID>201712280420000087</quoteID>
-    <orderID></orderID>
-    <transactTime>20180605-19:16:24.415</transactTime>
-    <lastQty>10000000</lastQty>
-    <leavesQty></leavesQty>
-    <grossTradeAmt>9990000.00</grossTradeAmt>
-    <side>1</side>
-    <updateTime>20180605-19:15:15.953</updateTime>
-    <price>99.9000</price>
-    <dirtyPrice>101.4912</dirtyPrice>
-    <securityID>1080023</securityID>
+    <tradeDate>20180827</tradeDate>
+    <tradeTime>19:16:42.217</tradeTime>
+    <quoteID>201808270420000191</quoteID>
+    <transactTime>20180827-19:16:42.217</transactTime>
+    <lastQty>45000000</lastQty>
+    <grossTradeAmt>46602000.00</grossTradeAmt>
+    <side>2</side>
+    <updateTime>20180827-19:14:38.526</updateTime>
+    <price>103.5600</price>
+    <dirtyPrice>105.0767</dirtyPrice>
+    <securityID>010214</securityID>
   </body>
 </root>

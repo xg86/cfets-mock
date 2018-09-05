@@ -1,41 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>560</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225938</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-11:39:42.737</sendingTime>
+    <sendingTime>20180821-09:29:44.109</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>873</clOrdIDClientID>
-    <origClOrdID>ODhzhttrd000001188</origClOrdID>
-    <quoteID>201712290410000059</quoteID>
+    <clOrdIDClientID>212768</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228376</origClOrdID>
+    <quoteID>201808210410000034</quoteID>
     <quoteTransType>C</quoteTransType>
-    <transactTime>20171229-11:39:48.385</transactTime>
+    <transactTime>20180821-09:31:44.930</transactTime>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
     <quoteType>112</quoteType>
-    <validUntilTime>20171229-11:55:00.000</validUntilTime>
+    <validUntilTime>20180821-09:57:39.039</validUntilTime>
     <securityID>1080023</securityID>
-    <side>1</side>
+    <side>2</side>
     <orderQty></orderQty>
     <deliveryType></deliveryType>
     <clearingMethod></clearingMethod>
     <settlType></settlType>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <partyName></partyName>
+    <traderName></traderName>
+    <traderID>htcsapidealer</traderID>
     <custodianAcctNumber></custodianAcctNumber>
     <cashAcctNumber></cashAcctNumber>
+    <portfolio></portfolio>
     <counterPartyList/>
-    <serialNo>201712290000001426</serialNo>
-    <qid>1197</qid>
-    <clOrdID>ODhzhttrd000001196</clOrdID>
+    <serialNo>201808210000214588</serialNo>
+    <qid>228380</qid>
+    <clOrdID>ODhzhttrd000228379</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4004</action>
     <clientID>CFETS</clientID>
-    <serialNo>603</serialNo>
-    <version>1.0.006</version>
+    <serialNo>225966</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-14:39:15.934</sendingTime>
+    <sendingTime>20180821-09:59:27.856</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>1279</qid>
-    <quoteID>201712290410000098</quoteID>
-    <transactTime>20171229-14:39:22.142</transactTime>
+    <qid>228436</qid>
+    <quoteID>201808210410000078</quoteID>
+    <transactTime>20180821-10:01:28.343</transactTime>
     <status>7</status>
     <clientID>CFETS</clientID>
-    <clOrdIDClientID>CFETS_201712290410000111</clOrdIDClientID>
+    <clOrdIDClientID>CFETS_201808210410000078</clOrdIDClientID>
     <origClOrdID></origClOrdID>
-    <quoteTransType></quoteTransType>
+    <quoteTransType>C</quoteTransType>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
     <quoteType>112</quoteType>
@@ -38,12 +37,12 @@
     <clearingMethod></clearingMethod>
     <settlType></settlType>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderID>htdealergsab</traderID>
     <traderName>a079</traderName>
     <custodianAcctNumber></custodianAcctNumber>
     <cashAcctNumber></cashAcctNumber>
     <counterPartyID></counterPartyID>
-    <updateTime>20171229-14:39:15.860</updateTime>
+    <updateTime>20180821-09:59:27.809</updateTime>
   </body>
 </root>

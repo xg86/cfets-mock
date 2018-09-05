@@ -2,65 +2,32 @@
 <root>
   <header>
     <action>2000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>619</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>227393</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-15:31:54.389</sendingTime>
+    <sendingTime>20180827-19:52:05.942</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>913</clOrdIDClientID>
-    <origClOrdID></origClOrdID>
-    <quoteID>201712290420000149</quoteID>
-    <transactTime>20171229-15:32:00.698</transactTime>
-    <quoteTransType></quoteTransType>
-    <orderQty></orderQty>
-    <securityID></securityID>
-    <side></side>
-    <text></text>
-    <validUntilTime></validUntilTime>
-    <settlType></settlType>
+    <clOrdIDClientID>213393</clOrdIDClientID>
+    <quoteID>201808270420000197</quoteID>
+    <transactTime>20180827-19:54:10.568</transactTime>
     <quoteType>1</quoteType>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
-    <deliveryType></deliveryType>
-    <clearingMethod></clearingMethod>
-    <price></price>
-    <maturityYield></maturityYield>
-    <strikeYield></strikeYield>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
-    <cashAcctNumber></cashAcctNumber>
-    <custodianAcctNumber></custodianAcctNumber>
+    <traderID>htcsapidealer</traderID>
     <counterPartyID>891012844010011610011</counterPartyID>
     <counterTraderName>a079</counterTraderName>
     <counterTraderID>htdealergsab</counterTraderID>
-    <settlCurrency></settlCurrency>
-    <settlCurrFxRate></settlCurrFxRate>
-    <serialNo></serialNo>
-    <qid>1311</qid>
-    <clOrdID></clOrdID>
+    <qid>230085</qid>
     <status>9</status>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
-    <settlDate></settlDate>
-    <settlCurrAmt></settlCurrAmt>
-    <accruedInterestAmt></accruedInterestAmt>
-    <accruedInterestTotalAmt></accruedInterestTotalAmt>
-    <dirtyPrice></dirtyPrice>
-    <tradeCashAmt></tradeCashAmt>
     <partyName>杭州衡泰测试</partyName>
-    <traderName>a080</traderName>
-    <custodianInstitutionName></custodianInstitutionName>
-    <cashBankName></cashBankName>
-    <counterPartyName>恒天基金</counterPartyName>
-    <queryRequestID></queryRequestID>
-    <quoteTime></quoteTime>
-    <negotiationCount>0</negotiationCount>
-    <symbol></symbol>
+    <traderName>htcsapidealer</traderName>
+    <counterPartyName>广发基金公司工行广发主题投资资产管理计划9号</counterPartyName>
   </body>
 </root>

@@ -1,23 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>3000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>438</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225934</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171228-13:43:50.349</sendingTime>
+    <sendingTime>20180821-09:18:42.745</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>661</clOrdIDClientID>
+    <clOrdIDClientID>212766</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
     <ordType>2</ordType>
-    <expireTime>20171228-19:30:00.000</expireTime>
+    <expireTime>20180821-09:46:37.037</expireTime>
     <securityID>1080023</securityID>
     <side>1</side>
     <maturityYield></maturityYield>
@@ -30,18 +29,22 @@
     <splitIndicator>Y</splitIndicator>
     <minTickSize></minTickSize>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <partyName></partyName>
+    <traderName></traderName>
+    <traderID>htcsapidealer</traderID>
     <custodianInstitutionName>国债登记结算公司</custodianInstitutionName>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
     <cashBankName>杭州衡泰测试</cashBankName>
     <cashAcctNumber>98769876987607</cashAcctNumber>
     <quoteTransType>C</quoteTransType>
-    <origClOrdID>ODhzhttrd000000938</origClOrdID>
-    <orderID>201712280460000014</orderID>
-    <transactTime>20171228-13:43:55.221</transactTime>
-    <serialNo>201712280000001259</serialNo>
-    <qid>942</qid>
-    <clOrdID>ODhzhttrd000000941</clOrdID>
+    <portfolio></portfolio>
+    <origClOrdID>ODhzhttrd022837000</origClOrdID>
+    <orderID>201808210460000001</orderID>
+    <transactTime>20180821-09:20:43.481</transactTime>
+    <quoteType>102</quoteType>
+    <serialNo>201808210000214584</serialNo>
+    <qid>228372</qid>
+    <clOrdID>ODhzhttrd022837200</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

@@ -1,39 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>2000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>382</serialNo>
-    <version>1.0.008</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225877</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171228-10:56:21.248</sendingTime>
+    <sendingTime>20180821-08:33:53.941</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>634</clOrdIDClientID>
-    <origClOrdID>ODhzhttrd000000830</origClOrdID>
-    <quoteID>201712280420000087</quoteID>
-    <transactTime>20171228-10:56:25.866</transactTime>
+    <clOrdIDClientID>212736</clOrdIDClientID>
+    <origClOrdID>ODhzhttrd000228275</origClOrdID>
+    <quoteID>201808210420000001</quoteID>
+    <transactTime>20180821-08:35:54.784</transactTime>
     <quoteTransType>R</quoteTransType>
-    <orderQty>1000000000.0000</orderQty>
+    <orderQty>9895000.0000</orderQty>
     <securityID>1080023</securityID>
-    <side>1</side>
+    <side>2</side>
     <text></text>
-    <validUntilTime>20171228-19:30:00.000</validUntilTime>
+    <validUntilTime>20180821-09:01:35.035</validUntilTime>
     <settlType>2</settlType>
     <quoteType>1</quoteType>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
     <deliveryType>0</deliveryType>
     <clearingMethod>13</clearingMethod>
-    <price>100.0000</price>
-    <maturityYield>535.0000</maturityYield>
+    <price>100.0500</price>
+    <maturityYield>4.7857</maturityYield>
     <strikeYield></strikeYield>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <traderID>htcsapidealer</traderID>
     <cashAcctNumber>98769876987607</cashAcctNumber>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
     <counterPartyID>891012844010011610011</counterPartyID>
@@ -41,23 +40,24 @@
     <counterTraderID>htdealergsab</counterTraderID>
     <settlCurrency>CNY</settlCurrency>
     <settlCurrFxRate></settlCurrFxRate>
-    <serialNo>201712280000001203</serialNo>
-    <qid>834</qid>
-    <clOrdID>ODhzhttrd000000833</clOrdID>
+    <portfolio></portfolio>
+    <serialNo>201808210000214558</serialNo>
+    <qid>228279</qid>
+    <clOrdID>ODhzhttrd000228278</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
-    <settlDate>20171229</settlDate>
-    <settlCurrAmt>1043002739.73</settlCurrAmt>
-    <accruedInterestAmt>4.30027</accruedInterestAmt>
-    <accruedInterestTotalAmt>43002739.73</accruedInterestTotalAmt>
-    <dirtyPrice>104.3003</dirtyPrice>
-    <tradeCashAmt>1000000000.00</tradeCashAmt>
+    <settlDate>20180822</settlDate>
+    <settlCurrAmt>10157597.03</settlCurrAmt>
+    <accruedInterestAmt>2.60384</accruedInterestAmt>
+    <accruedInterestTotalAmt>257649.53</accruedInterestTotalAmt>
+    <dirtyPrice>102.6538</dirtyPrice>
+    <tradeCashAmt>9899947.50</tradeCashAmt>
     <partyName>杭州衡泰测试</partyName>
-    <traderName>a080</traderName>
+    <traderName>htcsapidealer</traderName>
     <custodianInstitutionName>国债登记结算公司</custodianInstitutionName>
     <cashBankName>杭州衡泰测试</cashBankName>
-    <counterPartyName>恒天基金</counterPartyName>
+    <counterPartyName>广发基金公司工行广发主题投资资产管理计划9号</counterPartyName>
     <queryRequestID></queryRequestID>
     <quoteTime></quoteTime>
     <negotiationCount>0</negotiationCount>

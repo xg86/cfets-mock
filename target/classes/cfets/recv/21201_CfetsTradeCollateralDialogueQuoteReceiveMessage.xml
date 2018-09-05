@@ -2,22 +2,22 @@
   <header>
     <action>2005</action>
     <clientID>CFETS</clientID>
-    <serialNo>1207</serialNo>
-    <version>1.0.009</version>
+    <serialNo>225909</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180510-18:30:41.396</sendingTime>
+    <sendingTime>20180821-09:02:02.686</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>2733</qid>
-    <quoteID>201805100920000148</quoteID>
-    <transactTime>20180510-18:31:34.033</transactTime>
+    <qid>228332</qid>
+    <quoteID>201808210920000004</quoteID>
+    <transactTime>20180821-09:04:03.494</transactTime>
     <status>5</status>
     <clientID>CFETS</clientID>
-    <clOrdIDClientID>CFETS_201805100920000148</clOrdIDClientID>
+    <clOrdIDClientID>CFETS_201808210920000004</clOrdIDClientID>
     <origCfetsStatus>16</origCfetsStatus>
     <quoteTransType>R</quoteTransType>
     <isQuoteResponse>false</isQuoteResponse>
@@ -25,34 +25,40 @@
     <securityType>CR</securityType>
     <marketIndicator>9</marketIndicator>
     <quoteType>1</quoteType>
-    <validUntilTime>20180510-21:40:00.000</validUntilTime>
-    <side>2</side>
+    <validUntilTime>20180821-21:10:00.000</validUntilTime>
+    <side>1</side>
     <repoMethod>1</repoMethod>
-    <tradeLimitDays>13</tradeLimitDays>
-    <tradeCashAmt>375000.00</tradeCashAmt>
+    <tradeLimitDays>15</tradeLimitDays>
+    <tradeCashAmt>12000000.00</tradeCashAmt>
     <text></text>
     <settlType>2</settlType>
-    <price>3.5000</price>
+    <price>4.5000</price>
     <deliveryType>0</deliveryType>
     <deliveryType2>0</deliveryType2>
     <clearingMethod>13</clearingMethod>
-    <accruedInterestAmt>467.46575</accruedInterestAmt>
-    <settlDate>20180511</settlDate>
-    <settlDate2>20180524</settlDate2>
-    <cashHoldingDays>13</cashHoldingDays>
-    <settlCurrAmt2>375467.47</settlCurrAmt2>
-    <securityID>R014</securityID>
+    <accruedInterestAmt>22191.78082</accruedInterestAmt>
+    <settlDate>20180822</settlDate>
+    <settlDate2>20180906</settlDate2>
+    <cashHoldingDays>15</cashHoldingDays>
+    <settlCurrAmt2>12022191.78</settlCurrAmt2>
+    <securityID>R021</securityID>
     <settlCurrency></settlCurrency>
     <collateralBondList>
       <collateralBond>
         <underlyingSymbol>01国债11</underlyingSymbol>
         <underlyingSecurityID>010011</underlyingSecurityID>
-        <underlyingQty>12500000</underlyingQty>
-        <underlyingStipValue>3.00</underlyingStipValue>
+        <underlyingQty>30000000</underlyingQty>
+        <underlyingStipValue>15.00</underlyingStipValue>
+      </collateralBond>
+      <collateralBond>
+        <underlyingSymbol>01国开14</underlyingSymbol>
+        <underlyingSecurityID>010214</underlyingSecurityID>
+        <underlyingQty>30000000</underlyingQty>
+        <underlyingStipValue>25.00</underlyingStipValue>
       </collateralBond>
     </collateralBondList>
     <partyID>891012844010011610011</partyID>
-    <partyName>恒天基金</partyName>
+    <partyName>广发基金公司工行广发主题投资资产管理计划9号</partyName>
     <traderID>htdealergsab</traderID>
     <traderName>a079</traderName>
     <counterPartyID>346234623462346234621</counterPartyID>
@@ -60,6 +66,6 @@
     <counterTraderID>htcsdealer</counterTraderID>
     <counterTraderName>a080</counterTraderName>
     <negotiationCount>0</negotiationCount>
-    <updateTime>20180510-18:30:41.354</updateTime>
+    <updateTime>20180821-09:02:02.462</updateTime>
   </body>
 </root>

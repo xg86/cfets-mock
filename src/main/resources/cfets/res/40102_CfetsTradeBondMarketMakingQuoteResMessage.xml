@@ -1,33 +1,32 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>3002</action>
-    <clientID>xIR2</clientID>
-    <serialNo>458</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225931</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171228-14:35:38.329</sendingTime>
+    <sendingTime>20180821-09:16:58.541</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>680</clOrdIDClientID>
+    <clOrdIDClientID>212764</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
     <quoteType>107</quoteType>
-    <validUntilTime>20171228-19:30:00.000</validUntilTime>
+    <validUntilTime>20180821-09:44:56.056</validUntilTime>
     <anonymousIndicator>N</anonymousIndicator>
     <securityID>020205</securityID>
     <bondLegList>
       <bondLeg>
         <legSecurityID>020205</legSecurityID>
         <legSide>1</legSide>
-        <legYtmYield>2.8952</legYtmYield>
+        <legYtmYield>2.6778</legYtmYield>
         <legStrikeYield></legStrikeYield>
-        <legPrice>99.0000</legPrice>
-        <legOrderQty>1000000000.0000</legOrderQty>
+        <legPrice>99.9000</legPrice>
+        <legOrderQty>10000000.0000</legOrderQty>
         <legSettlCurrency>CNY</legSettlCurrency>
         <legSettlCurrFxRate></legSettlCurrFxRate>
         <legDeliveryType>0</legDeliveryType>
@@ -37,10 +36,10 @@
       <bondLeg>
         <legSecurityID>020205</legSecurityID>
         <legSide>2</legSide>
-        <legYtmYield>2.8952</legYtmYield>
+        <legYtmYield>2.6778</legYtmYield>
         <legStrikeYield></legStrikeYield>
-        <legPrice>99.0000</legPrice>
-        <legOrderQty>1000000000.0000</legOrderQty>
+        <legPrice>99.9000</legPrice>
+        <legOrderQty>10000000.0000</legOrderQty>
         <legSettlCurrency>CNY</legSettlCurrency>
         <legSettlCurrFxRate></legSettlCurrFxRate>
         <legDeliveryType>0</legDeliveryType>
@@ -51,19 +50,22 @@
     <maxFloor>10000000</maxFloor>
     <minTickSize>10000000</minTickSize>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <partyName></partyName>
+    <traderName>htcsapidealer</traderName>
+    <traderID>htcsapidealer</traderID>
     <custodianInstitutionName>国债登记结算公司</custodianInstitutionName>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
     <cashBankName>杭州衡泰测试</cashBankName>
     <cashAcctNumber>98769876987607</cashAcctNumber>
-    <routingType></routingType>
+    <routingType>0</routingType>
+    <portfolio></portfolio>
     <quoteTransType>N</quoteTransType>
     <origClOrdID></origClOrdID>
-    <quoteID>201712280440000023</quoteID>
-    <transactTime>20171228-14:35:42.024</transactTime>
-    <serialNo>201712280000001292</serialNo>
-    <qid>983</qid>
-    <clOrdID>ODhzhttrd000000982</clOrdID>
+    <quoteID>201808210440000021</quoteID>
+    <transactTime>20180821-09:18:59.185</transactTime>
+    <serialNo>201808210000214581</serialNo>
+    <qid>228367</qid>
+    <clOrdID>ODhzhttrd022836700</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

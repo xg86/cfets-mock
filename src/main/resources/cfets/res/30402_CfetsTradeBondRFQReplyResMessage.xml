@@ -1,49 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4001</action>
-    <clientID>xIR2</clientID>
-    <serialNo>600</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225996</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-14:34:42.576</sendingTime>
+    <sendingTime>20180821-10:10:33.755</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>909</clOrdIDClientID>
+    <clOrdIDClientID>212795</clOrdIDClientID>
     <origClOrdID></origClOrdID>
-    <quoteReqID>201712290410000111</quoteReqID>
-    <quoteID>201712290420000112</quoteID>
+    <quoteReqID>201808210410000106</quoteReqID>
+    <quoteID>201808210420000107</quoteID>
     <quoteTransType>N</quoteTransType>
-    <transactTime>20171229-14:34:48.813</transactTime>
+    <transactTime>20180821-10:12:34.343</transactTime>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
     <quoteType>113</quoteType>
-    <validUntilTime>20171229-15:00:00.000</validUntilTime>
+    <validUntilTime>20180821-10:42:00.000</validUntilTime>
     <securityID>010214</securityID>
     <side>2</side>
-    <maturityYield>5.0000</maturityYield>
+    <maturityYield>4.2950</maturityYield>
     <strikeYield></strikeYield>
-    <price>100.0000</price>
-    <orderQty>10000000.0000</orderQty>
+    <price>99.9000</price>
+    <orderQty>50000000.0000</orderQty>
     <settlCurrency></settlCurrency>
     <settlCurrFxRate></settlCurrFxRate>
     <deliveryType>0</deliveryType>
     <clearingMethod>13</clearingMethod>
     <settlType>2</settlType>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>htcsapidealer</traderName>
+    <traderID>htcsapidealer</traderID>
     <custodianAcctNumber>0980980987</custodianAcctNumber>
     <cashAcctNumber>98769876987607</cashAcctNumber>
     <counterPartyID>891012844010011610011</counterPartyID>
+    <counterPartyName>广发基金公司工行广发主题投资资产管理计划9号</counterPartyName>
     <counterTraderID>htdealergsab</counterTraderID>
+    <counterTraderName>a079</counterTraderName>
+    <portfolio></portfolio>
     <quoteRequestRejectType></quoteRequestRejectType>
-    <serialNo>201712290000001467</serialNo>
-    <qid>1274</qid>
-    <clOrdID>ODhzhttrd000001273</clOrdID>
+    <serialNo>201808210000214616</serialNo>
+    <qid>228487</qid>
+    <clOrdID>ODhzhttrd000228486</clOrdID>
     <status>5</status>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>

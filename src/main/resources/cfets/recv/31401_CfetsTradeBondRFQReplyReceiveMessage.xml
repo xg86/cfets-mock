@@ -1,50 +1,49 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <root>
   <header>
     <action>4005</action>
-    <clientID>CFETS</clientID>
-    <serialNo>557</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>225959</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20171229-11:32:37.948</sendingTime>
+    <sendingTime>20180821-09:54:16.378</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
     <errorMsg></errorMsg>
   </header>
   <body>
-    <qid>1191</qid>
-    <quoteID>201712290420000061</quoteID>
-    <transactTime>20171229-11:32:43.949</transactTime>
+    <qid>228425</qid>
+    <quoteID>201808210420000068</quoteID>
+    <transactTime>20180821-09:56:17.111</transactTime>
     <status>5</status>
-    <clientID>xIR2</clientID>
-    <clOrdIDClientID>CFETS_201712290420000061</clOrdIDClientID>
+    <clientID>cfetszgl</clientID>
+    <clOrdIDClientID>CFETS_201808210420000068</clOrdIDClientID>
     <quoteTransType>N</quoteTransType>
     <marketIndicator>4</marketIndicator>
     <securityType>CBT</securityType>
-    <quoteReqID>201712290410000059</quoteReqID>
+    <quoteReqID>201808210410000067</quoteReqID>
     <anonymousIndicator>T</anonymousIndicator>
     <contingencyIndicator>F</contingencyIndicator>
     <quoteType>113</quoteType>
-    <validuntilTime>20171229-11:52:00.000</validuntilTime>
+    <validuntilTime>20180821-10:16:00.000</validuntilTime>
     <securityID>1080023</securityID>
     <symbol>10国网债02</symbol>
     <side>2</side>
-    <maturityYield>5.1417</maturityYield>
+    <maturityYield>5.1665</maturityYield>
     <strikeYield></strikeYield>
     <price>98.0000</price>
-    <dirtyPrice>102.3397</dirtyPrice>
-    <accruedInterestAmt>4.33973</accruedInterestAmt>
-    <accruedInterestTotalAmt>433972.60</accruedInterestTotalAmt>
-    <orderQty>10000000</orderQty>
-    <tradeCashAmt>9800000.00</tradeCashAmt>
-    <settlCurrAmt>10233972.60</settlCurrAmt>
+    <dirtyPrice>100.6038</dirtyPrice>
+    <accruedInterestAmt>2.60384</accruedInterestAmt>
+    <accruedInterestTotalAmt>1301917.81</accruedInterestTotalAmt>
+    <orderQty>50000000</orderQty>
+    <tradeCashAmt>49000000.00</tradeCashAmt>
+    <settlCurrAmt>50301917.81</settlCurrAmt>
     <settlCurrency>CNY</settlCurrency>
     <settlCurrFxRate></settlCurrFxRate>
     <deliveryType>0</deliveryType>
     <clearingMethod>13</clearingMethod>
     <settlType>2</settlType>
-    <settlDate>20180101</settlDate>
+    <settlDate>20180822</settlDate>
     <principal></principal>
     <totalPrincipal></totalPrincipal>
     <partyID></partyID>
@@ -54,7 +53,9 @@
     <custodianAcctNumber></custodianAcctNumber>
     <cashAcctNumber></cashAcctNumber>
     <counterPartyID></counterPartyID>
+    <counterPartyName></counterPartyName>
     <counterTraderID></counterTraderID>
-    <updateTime>20171229-11:32:37.825</updateTime>
+    <counterTraderName></counterTraderName>
+    <updateTime>20180821-09:54:16.317</updateTime>
   </body>
 </root>

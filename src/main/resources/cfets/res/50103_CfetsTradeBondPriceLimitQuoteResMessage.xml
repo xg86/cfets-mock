@@ -2,48 +2,31 @@
 <root>
   <header>
     <action>3000</action>
-    <clientID>xIR2</clientID>
-    <serialNo>655</serialNo>
-    <version>1.0.006</version>
+    <clientID>cfetszgl</clientID>
+    <serialNo>227396</serialNo>
+    <version>1.0.011</version>
     <msgType>P</msgType>
-    <sendingTime>20180103-14:52:59.255</sendingTime>
+    <sendingTime>20180827-19:52:14.465</sendingTime>
     <from></from>
     <operator></operator>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
   </header>
   <body>
-    <clOrdIDClientID>930</clOrdIDClientID>
+    <clOrdIDClientID>213398</clOrdIDClientID>
     <securityType>CBT</securityType>
     <marketIndicator>4</marketIndicator>
-    <ordType></ordType>
-    <expireTime></expireTime>
     <securityID>1080023</securityID>
     <side>1</side>
-    <maturityYield></maturityYield>
-    <strikeYield></strikeYield>
-    <price></price>
-    <orderQty></orderQty>
-    <deliveryType></deliveryType>
-    <clearingMethod></clearingMethod>
-    <settlType></settlType>
     <splitIndicator>Y</splitIndicator>
-    <minTickSize></minTickSize>
     <partyID>346234623462346234621</partyID>
-    <traderID>htcsdealer</traderID>
-    <custodianInstitutionName></custodianInstitutionName>
-    <custodianAcctNumber></custodianAcctNumber>
-    <cashBankName></cashBankName>
-    <cashAcctNumber></cashAcctNumber>
-    <quoteTransType></quoteTransType>
-    <origClOrdID></origClOrdID>
-    <orderID>201712280460000014</orderID>
-    <transactTime>20180103-14:53:01.031</transactTime>
-    <serialNo></serialNo>
-    <qid>1378</qid>
-    <clOrdID></clOrdID>
+    <partyName>杭州衡泰测试</partyName>
+    <traderName>htcsapidealer</traderName>
+    <traderID>htcsapidealer</traderID>
+    <orderID>201808270460000036</orderID>
+    <transactTime>20180827-19:54:19.647</transactTime>
+    <quoteType>102</quoteType>
+    <qid>230088</qid>
     <status>9</status>
     <errorCode>0</errorCode>
-    <errorMsg></errorMsg>
   </body>
 </root>
