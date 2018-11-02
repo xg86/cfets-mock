@@ -74,26 +74,26 @@
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets</artifactId>
-			<version>1.1.7.0</version>
+			<version>1.1.8.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets-transport</artifactId>
-			<version>1.1.7.0</version>
+			<version>1.1.8.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets-common</artifactId>
-			<!-- <version>1.1.7.0</version> -->
-			<version>1.1.7.0</version>
+			<!-- <version>1.1.8.0</version> -->
+			<version>1.1.8.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.xquant.platform.component.cfets</groupId>
 			<artifactId>xquant-platform-component-cfets-xswap</artifactId>
-			<version>1.1.7.0</version>
+			<version>1.1.8.0</version>
 		</dependency>
 
 		<!--mysql driver 由项目点自行决定 -->

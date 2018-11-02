@@ -19,29 +19,27 @@ public class MessagePersistManagerDelegate {
 
 	@Autowired
 	private TradeMessagePushService TradeMessagePushService;
-	
+
 	protected Logger logger = LoggerFactory.getLogger(MessagePersistManagerDelegate.class);
 
 	@SuppressWarnings("unchecked")
 	public void handle(Object obj) {
-		
-	
-		
+
 		try {
-			
 			/**
 			 * 成交回报消息不需要入库处理
 			 */
-			if(CfetsTradeExecutionReportMessage.class.isInstance(obj)) {
-				TradeMessagePushService.addMessage(obj);
+			if (CfetsTradeExecutionReportMessage.class.isInstance(obj)) {
 				return;
 			}
-			
-			if (getSupportManager(obj).handle(obj)) {
-				TradeMessagePushService.addMessage(obj);
-			}
+			/**
+			 * 进行入库处理
+			 */
+			getSupportManager(obj).handle(obj);
 		} catch (Exception e) {
 			logger.error("MessagePersistManagerDelegate Exception ", e);
+		} finally {
+			TradeMessagePushService.addMessage(obj);
 		}
 	}
 

@@ -115,8 +115,8 @@ public class PledgeBondResMessageServiceImpl implements PledgeBondResMessageServ
 		MockCollateralDialogueQuoteResMessageBody mockBody = new MockCollateralDialogueQuoteResMessageBody();
 		BeanUtils.copyProperties(message.getBody(), mockBody);
 		mockBody.setAction(message.getHeader().getAction());
-		mockBody.setMyside(CfetsTradeSideUtil.changeSide(mockBody.getSide()));
-		mockBody.setSendOrRecv(SendOrRecvFlag.RECV);
+		mockBody.setMyside(mockBody.getSide());
+		mockBody.setSendOrRecv(SendOrRecvFlag.SEND);
 		mockBody.setClientId(message.getHeader().getClientID());
 		mockBody.setUpdateTime(MockDateTimeUtil.getTransactimeOfNow());
 		return mockBody;
